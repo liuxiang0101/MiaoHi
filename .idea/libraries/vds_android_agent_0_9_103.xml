@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="vds-android-agent-0.9.103">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3633947f721ce6fbc7dcbe9e5fbf5e5c4df12e3b/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3633947f721ce6fbc7dcbe9e5fbf5e5c4df12e3b/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

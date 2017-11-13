@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="blurry-2.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3a6fd28d389ad82f07f715aebd278be21edad35d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3a6fd28d389ad82f07f715aebd278be21edad35d/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.wasabeef/blurry/2.1.0/ded9bb896ffa714120f2ab76f75a43de424305b2/blurry-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
