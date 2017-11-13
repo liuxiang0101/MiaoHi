@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/show_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/iv_mine_drafts_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:src="@color/color_f1" />
+
+        <TextView
+            android:id="@+id/tv_mine_drafts_vedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_mine_drafts_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_mine_drafts_img"
+            android:singleLine="true"
+            android:textColor="@color/color_666"
+            android:textSize="16dp"
+            tools:text="我的视频" />
+
+        <TextView
+            android:id="@+id/tv_mine_drafts_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_mine_drafts_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_mine_drafts_img"
+            android:singleLine="true"
+            android:textColor="@color/color_999"
+            android:textSize="12dp"
+            tools:text="时间" />
+
+        <TextView
+            android:id="@+id/tv_drafts_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_bindbtn"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="编辑"
+            android:textColor="@drawable/color_1d"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_updatefail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_mine_drafts_vedio"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_mine_drafts_vedio"
+            android:text="映答上传失败"
+            android:textColor="@color/red_text"
+            android:textSize="11dp"
+            android:visibility="gone" />
+
+        <View
+            style="@style/HorizontalLine"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1px" />
+
+    </RelativeLayout>
+
+</LinearLayout>

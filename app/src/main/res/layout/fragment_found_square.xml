@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶部搜索的导航栏-->
+    <include
+        android:id="@+id/top"
+        layout="@layout/search_bar_found_fragment" />
+    <!--主体数据展示-->
+    <com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshRecyclerView
+        android:id="@+id/pulltorefresh_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:background="@color/white" />
+    <!--滑动时悬浮的选择分类条-->
+    <RelativeLayout
+        android:id="@+id/rl_suspension"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/pulltorefresh_rv"
+        android:background="@color/white"
+        android:visibility="invisible">
+        <!--当前分类的类别名称-->
+        <TextView
+            android:id="@+id/tv_sort_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="精选内容"
+            android:textColor="@color/color_1d"
+            android:textSize="12dp" />
+        <!--分类选择点击区域-->
+        <LinearLayout
+            android:id="@+id/ll_select_sort"
+            android:layout_width="75dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/tag_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/discover_sort" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择分类"
+                android:textColor="@color/color_1d"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

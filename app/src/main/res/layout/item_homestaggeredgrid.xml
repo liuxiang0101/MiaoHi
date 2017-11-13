@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners_root_bg"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+
+    <com.haiqiu.miaohi.widget.SelectableRoundedImageView
+        android:id="@+id/sriv_homevideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@color/color_f1"
+        app:sriv_left_bottom_corner_radius="0dp"
+        app:sriv_left_top_corner_radius="6dp"
+        app:sriv_right_bottom_corner_radius="0dp"
+        app:sriv_right_top_corner_radius="6dp" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_element_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/svg_homeitem_time"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_homeitem_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/font_color"
+                android:textSize="11dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_prise_state"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/selector_prise" />
+
+            <TextView
+                android:id="@+id/tv_homeitem_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/font_color"
+                android:textSize="11dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/svg_home_gift" />
+
+            <TextView
+                android:id="@+id/tv_homeite_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/font_color"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_homeitem_videodescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@color/color_666"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/tv_person_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:maxLines="1"
+            android:textColor="@color/white70"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_root"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginTop="9dp">
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:id="@+id/mcv_homeitem_header"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/head_default" />
+
+            <TextView
+                android:id="@+id/tv_homeitem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/mcv_homeitem_header"
+                android:layout_toRightOf="@+id/mcv_homeitem_header"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/font_color"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/iv_homeitem_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="-8dp"
+                android:layout_toRightOf="@+id/mcv_homeitem_header"
+                android:src="@drawable/svg_vip_little" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/svg_answer_icon_right"
+        android:visibility="gone" />
+
+
+</LinearLayout>

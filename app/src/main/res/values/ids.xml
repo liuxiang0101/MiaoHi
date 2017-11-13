@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gridview" type="id" />
+    <item name="webview" type="id" />
+    <item name="scrollview" type="id" />
+    <item name="navigation" type="id" />
+    <item name="listView" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="recycler_view" type="id" />
+
+    <item name="ratio_view4_3" type="id" />
+    <item name="ratio_view1_1" type="id" />
+    <item name="ratio_view3_4" type="id" />
+    <item name="ratio_view16_9" type="id" />
+
+    <item name="single_finger_view_scale" type="id" />
+    <item name="iv_imageview" type="id" />
+    <item name="iv_imageview_video" type="id" />
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_rootview_videoandimg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.haiqiu.miaohi.utils.shareImg.ShareVideoAndImgView2
+            android:id="@+id/sviv_videoandimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_videodetailcontentview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.haiqiu.miaohi.view.CommonNavigation
+                    android:id="@+id/cn_videodetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:titleText="@string/title_video_info" />
+
+                <com.haiqiu.miaohi.view.CommonPersonalInfoView
+                    android:id="@+id/cpiv_videoandimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/cpiv_videoandimg"
+                    android:tag="ptrl_videodetail" />
+
+                <LinearLayout
+                    android:id="@+id/ll_outside"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_smallvideoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/cpiv_videoandimg"
+                    android:orientation="vertical" />
+
+                <ImageView
+                    android:id="@+id/iv_gift_coming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="2dp"
+                    android:src="@drawable/gift_coming"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/shadow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_videoandimg_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/iv_videoandimgback"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/videoandimgback" />
+
+                <ImageView
+                    android:id="@+id/iv_videoandimgpraise"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/videoandimgpraise" />
+
+                <ImageView
+                    android:id="@+id/iv_videoandimgcomment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/videoandimgcomment" />
+
+                <ImageView
+                    android:id="@+id/iv_videoandimgask"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/askpeople"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_videoandimgshare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/videoandimgshare" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_keboardmarsk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="@color/black"
+            android:visibility="gone" />
+
+        <com.haiqiu.miaohi.widget.KeyBoardView
+            android:id="@+id/kv_videodetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_deleted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_deletetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="125dp"
+                android:src="@drawable/videoandimgdeletetip" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_deletetext"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25dp"
+                android:text="该视频已经被删除"
+                android:id="@+id/tv_deletetext"
+                android:textColor="@color/color_999"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/shadow" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

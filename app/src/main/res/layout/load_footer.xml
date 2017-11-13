@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/pull_to_load_footer_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pull_to_load_footer_height"
+        android:gravity="center"
+        android:padding="0dp">
+
+        <com.haiqiu.miaohi.widget.recyclerview.progressindicator.AVLoadingIndicatorView
+            android:id="@+id/pull_to_load_footer_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/pull_to_load_footer_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/pushmsg_center_load_more_ongoing_text"
+            android:textColor="@color/color_999"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

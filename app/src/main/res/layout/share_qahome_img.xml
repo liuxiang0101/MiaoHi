@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_rl_qahome_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/shareqahome" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:id="@+id/mcv_qahome_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/head_default" />
+
+            <ImageView
+                android:id="@+id/iv_qahome_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mcv_qahome_head"
+                android:layout_alignRight="@+id/mcv_qahome_head"
+                android:src="@drawable/vip_big" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_qahome_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/gender_women"
+            android:gravity="center"
+            android:text="TimSara"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_qahome_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="中国化学第一人,江湖人称小雪人11"
+            android:textColor="@color/color_999"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_qahome_authentic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="中国化学第一人,江湖人称小雪人"
+            android:textColor="@color/color_999"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_rl_qahome_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shareqahome_answered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="38"
+                    android:textColor="@color/color_1d"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="回答了"
+                    android:textColor="#9a9a9a"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shareqahome_circuseed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="38"
+                    android:textColor="@color/color_1d"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="被围观"
+                    android:textColor="#9a9a9a"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_shareqahome_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="38"
+                    android:textColor="@color/color_1d"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="收入(嗨币)"
+                    android:textColor="#9a9a9a"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_askto"
+            android:layout_width="115dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/shape_sharqahome_ask"
+            android:gravity="center"
+            android:text="向他提问"
+            android:textColor="@color/color_1d" />
+
+        <ImageView
+            android:id="@+id/iv_qahome_qrcode"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@color/color_f1" />
+
+        <TextView
+            android:id="@+id/tv_qahome_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="长按二维码向他提问" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="17dp"
+            android:drawableLeft="@drawable/sharebottomicon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/share_bottomstr"
+            android:textColor="@color/color_1d"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="@dimen/fadeoutfromraduis"
+        android:bottomRightRadius="@dimen/fadeoutfromraduis"
+        android:topLeftRadius="@dimen/fadeoutfromraduis"
+        android:topRightRadius="@dimen/fadeoutfromraduis" />
+    <solid android:color="@color/clickmarsk" />
+</shape>

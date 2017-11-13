@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_videodetail_dialogsendgiftselect"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_itemvideodetail_dialogsendgiftheader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/color_f1"
+            android:layout_alignBottom="@+id/tv_itemvideodetail_dialogsendgifttitle" />
+
+        <TextView
+            android:id="@+id/tv_itemvideodetail_dialogsendgifttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:singleLine="true"
+            tools:text="冠军戒指"
+            android:textColor="@color/color_666"
+            android:visibility="gone"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_itemvideodetail_sendgiftcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/promptbubble_little_shape"
+            android:gravity="center"
+            android:minHeight="12dp"
+            android:minWidth="12dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="9dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/cn_qaquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="映答提问" />
+
+    <EditText
+        android:id="@+id/et_qaqustion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cn_qaquestion"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:textSize="12dp"
+        android:textColor="@color/color_1d"
+        android:textColorHint="@color/color_c4"
+        android:maxLength="100"
+        android:hint="向Ta提问,等待Ta拍摄视频回答您;超过48小时未回答,费用会自动退回。"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="16dp">
+
+        <CheckBox
+            android:id="@+id/cb_qaquestionprivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:background="@drawable/selector_qaquestionprivate"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/cb_qaquestionprivate"
+            android:text="公开提问,回答每被人围观一次,你可从中分成0.5嗨币"
+            android:textColor="@color/color_999"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_qaquestiontextcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:text="100"
+            android:textColor="@color/color_1d" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

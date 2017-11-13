@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/iv_answerpublicstate">
+
+        <TextView
+            android:id="@+id/tv_anwser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            tools:text="请问姚明先生"
+            android:textColor="@color/color_666"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rl_1"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="17dp">
+
+        <com.haiqiu.miaohi.view.MyCircleView
+            android:id="@+id/tv_answerheader"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/head_default" />
+
+        <TextView
+            android:id="@+id/tv_answername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_answerheader"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="姚明"
+            android:textColor="@color/color_666"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_answerstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="等待回答"
+            android:textColor="@color/color_666"
+            android:textSize="14dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_answervip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_answerheader"
+            android:layout_alignRight="@+id/tv_answerheader"
+            android:src="@drawable/svg_vip_little" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_answerstatedescribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_2"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        tools:text="此问题还有20小时过期"
+        android:textColor="@color/font_color"
+        android:textSize="12dp" />
+
+    <View
+        android:id="@+id/v_askdivider"
+        style="@style/HorizontalLine"
+        android:layout_below="@+id/tv_answerstatedescribe"
+        android:background="@color/color_df" />
+
+    <ImageView
+        android:id="@+id/iv_answerpublicstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rl_1"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/svg_qaprivate"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_answer_cover"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rl_2"
+        android:layout_marginRight="15dp">
+
+        <com.haiqiu.miaohi.widget.SelectableRoundedImageView
+            android:id="@+id/srivanswervideoconver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@color/color_f1"
+            app:sriv_left_bottom_corner_radius="3dp"
+            app:sriv_left_top_corner_radius="3dp"
+            app:sriv_right_bottom_corner_radius="3dp"
+            app:sriv_right_top_corner_radius="3dp" />
+
+        <com.haiqiu.miaohi.widget.SelectableRoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:src="@drawable/qa_mask"
+            app:sriv_left_bottom_corner_radius="3dp"
+            app:sriv_left_top_corner_radius="3dp"
+            app:sriv_right_bottom_corner_radius="3dp"
+            app:sriv_right_top_corner_radius="3dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/svg_qa_video" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigation"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="25dp"
+            android:text="他们也在这里玩"
+            android:textColor="@color/color_1d"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_msg"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐"
+                android:textColor="@color/color_c4"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_1d"
+                android:textSize="20dp"
+                tools:text="12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个你可能感兴趣的人"
+                android:textColor="@color/color_c4"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/gv_recommend_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:numColumns="1"
+            android:smoothScrollbar="false"
+            android:verticalSpacing="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/gv_recommend_user"
+            android:background="@drawable/bg_gradient_transparent_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="没有推荐的用户了"
+        android:textColor="@color/color_c4"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"
+        android:src="@drawable/crop__ic_cancel"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_button_black"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="开启你的秒嗨历程"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center_vertical">
+
+    <!--图标-->
+    <ImageView
+        android:id="@+id/custom_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/custom_icon"
+        android:layout_alignTop="@+id/custom_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/custom_icon">
+        <!--标题-->
+        <TextView
+            android:id="@+id/tv_custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            tools:text="Title"
+            android:textColor="@color/color_666"
+            android:textSize="15dp" />
+        <!--内容-->
+        <TextView
+            android:id="@+id/tv_custom_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_custom_title"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="content"
+            android:textColor="@color/color_999"
+            android:textSize="12dp" />
+        <!--时间-->
+        <TextView
+            android:id="@+id/tv_custom_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            tools:text="16m49s"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/color_666"
+            android:textSize="12dp" />
+        <!--角标数-->
+        <TextView
+            android:id="@+id/tv_custom_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="4dp"
+            tools:text="2"
+            android:textColor="@color/color_666"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--头部标题栏-->
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="短信验证" />
+
+    <!--短信已发送提示信息-->
+    <LinearLayout
+        android:id="@+id/ll_prompt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_phone_number_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/navigation"
+            android:gravity="center"
+            android:text="@string/tv_short_message_has_send"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/navigation"
+            android:layout_marginLeft="6dp"
+            android:gravity="center"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp"
+            tools:text="156 0077 7290" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_prompt_msg"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/act_register_verify_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:hint="@string/et_hint_input_verification_code"
+            android:textColor="@color/color_1d"
+            android:textColorHint="@color/color_c4"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/act_register_btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="@string/tv_get_verification_code"
+            android:textColor="@color/color_1d"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_df" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_df"
+        android:gravity="center"
+        android:text="@string/tv_next_two_quarters"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/color_c4"
+        android:textSize="12dp"
+        tools:text="@string/tv_verification_code_fail" />
+
+    <!--&lt;!&ndash;秒嗨用户协议&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_agreement"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="15dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/tv_register_agree"-->
+    <!--android:textColor="@color/color_333"-->
+    <!--android:textSize="14dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_agreement"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/tv_useragreement"-->
+    <!--android:textColor="@color/common_blue2"-->
+    <!--android:textSize="14dp" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

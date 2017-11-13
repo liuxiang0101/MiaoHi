@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/rl_checkgift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/videodetail_chckgift">
+
+            <TextView
+                android:id="@+id/tv_dialog_gifttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="世界杯"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_dialog_giftcancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/selector_videodetail_chckgift_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_checkgift"
+            android:background="@drawable/videodetail_chckgift_middle"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/tv_dialog_giftvpout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rl_checkgift">
+
+                <ImageView
+                    android:id="@+id/iv_dialog_gift"
+                    android:layout_width="126dp"
+                    android:layout_height="126dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@color/color_f1" />
+
+                <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/vp_dialog_gift"-->
+                <!--android:layout_width="126dp"-->
+                <!--android:layout_height="126dp"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:layout_toLeftOf="@+id/iv_dialog_giftrighttarrow"-->
+                <!--android:layout_toRightOf="@+id/iv_dialog_giftleftarrow" />-->
+
+                <ImageView
+                    android:id="@+id/iv_dialog_giftrighttarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="30dp"
+                    android:src="@drawable/svg_to_right_arrow_big" />
+
+                <ImageView
+                    android:id="@+id/iv_dialog_giftleftarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="30dp"
+                    android:src="@drawable/svg_backarrow" />
+
+                <View
+                    style="@style/HorizontalLine"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_gifttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_dialog_gift"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    tools:text="2016-05-05"
+                    android:textColor="@color/font_color"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_dialog_gift"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <View
+                style="@style/HorizontalLine"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_dialog_bottomgift"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/videodetail_chckgift_bottom"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <com.haiqiu.miaohi.view.MyCircleView
+                    android:id="@+id/mcv_dialog_giftheader"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/head_default" />
+
+                <ImageView
+                    android:id="@+id/iv_dialog_giftvip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mcv_dialog_giftheader"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_toRightOf="@+id/mcv_dialog_giftheader"
+                    android:src="@drawable/svg_vip_little" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_giftname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toLeftOf="@+id/rl_dialog_gif_attention"
+                    android:layout_toRightOf="@+id/mcv_dialog_giftheader"
+                    android:singleLine="true"
+                    android:textColor="@color/color_666"
+                    android:textSize="14dp"
+                    tools:text="aaaa" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_giftnote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog_giftname"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@+id/rl_dialog_gif_attention"
+                    android:layout_toRightOf="@+id/mcv_dialog_giftheader"
+                    android:singleLine="true"
+                    android:textColor="@color/font_color"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_giftfanscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mcv_dialog_giftheader"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/rl_dialog_gif_attention"
+                    android:layout_toRightOf="@+id/iv_dialog_giftvip"
+                    android:singleLine="true"
+                    android:textColor="@color/font_color"
+                    android:textSize="10dp"
+                    tools:text="aaa" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_dialog_gif_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true">
+
+                    <TextView
+                        android:id="@+id/tv_dialog_giftattention"
+                        style="@style/attention_style"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/selector_videodetail_checkgift_attention_btn"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_centerInParent="true"
+                        android:indeterminateDrawable="@drawable/progress_attention"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

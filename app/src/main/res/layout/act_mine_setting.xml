@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f1"
+    android:orientation="vertical">
+    <!--标题-->
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/cn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/title_setting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingdraft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="草稿箱" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <View
+                style="@style/common_mini_line_d6"
+                android:layout_marginTop="15dp"
+                android:visibility="gone" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingwallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:text="我的钱包" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <View
+                style="@style/common_mini_line_d6"
+                android:layout_marginTop="15dp" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingmaybeinsteret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="选择我感兴趣的内容" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <View
+                style="@style/common_mini_line_d6"
+                android:layout_marginTop="15dp" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingbindaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="账号绑定" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingnotifysetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="通知设置" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <View
+                style="@style/common_mini_line_d6"
+                android:layout_marginTop="15dp" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingauthentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="秒嗨认证" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <View
+                style="@style/common_mini_line_d6"
+                android:layout_marginTop="15dp" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingclearcach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:righttext="0M"
+                app:showarrow="false"
+                app:text="清空缓存" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="意见反馈" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <com.haiqiu.miaohi.widget.ItemSettingView
+                android:id="@+id/isv_settingaboutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="关于秒嗨" />
+
+            <View style="@style/common_mini_line_d6" />
+
+            <View
+                style="@style/common_mini_line_d6"
+                android:layout_marginTop="15dp" />
+
+
+            <TextView
+                android:id="@+id/tv_developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:height="55dp"
+                android:background="@drawable/linearlayout_mine_tab_selector"
+                android:drawableRight="@drawable/enterarrow"
+                android:gravity="center"
+                android:paddingRight="8dp"
+                android:text="开发者选项"
+                android:textColor="@color/color_666" />
+
+            <TextView
+                android:id="@+id/tv_loginout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/linearlayout_mine_tab_selector"
+                android:gravity="center"
+                android:text="退出当前账号"
+                android:textColor="#ff4545"
+                android:textSize="12dp" />
+
+            <View
+                style="@style/common_mini_line_d6"
+                android:layout_marginBottom="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="@string/bt_next_step"
+        app:titleText="视频压缩" />
+
+    <com.haiqiu.miaohi.widget.mediaplayer.VideoViewWrap
+        android:id="@+id/base_video_view_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:video_type="bottom_progress" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/splash" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--头部标题栏-->
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="手机号注册" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Hi~"
+        android:textColor="@color/color_1d"
+        android:textSize="30dp" />
+    <!--页面提示语句-->
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/welcome_to_miaohi"
+        android:textColor="@color/color_1d"
+        android:textSize="15dp" />
+
+    <!--手机号-->
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="45dp"
+        android:background="@null"
+        android:hint="@string/tv_input_your_phone_number"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textColor="@color/color_1d"
+        android:textColorHint="@color/color_c4"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/iv_et_clear"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/et_phone_number"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/icon_search_header_chear"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/et_phone_number"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_df" />
+    <!--下一步按钮-->
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_df"
+        android:gravity="center"
+        android:text="@string/tv_next_quarter"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    <!--服务器返回的提示信息-->
+    <TextView
+        android:id="@+id/tv_button_prompt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_c4"
+        android:textSize="12dp"
+        tools:text="该手机号已绑定，请重新输入" />
+    <!--&lt;!&ndash;秒嗨用户协议&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_agreement"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="15dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/tv_register_agree"-->
+    <!--android:textColor="@color/color_333"-->
+    <!--android:textSize="11dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_agreement"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/tv_useragreement"-->
+    <!--android:textColor="@color/common_blue2"-->
+    <!--android:textSize="11dp" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

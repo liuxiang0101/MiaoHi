@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_enter_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_message_system_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/miaohai_little_aides" />
+
+        <TextView
+            android:id="@+id/tv_message_system_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iv_message_system_head"
+            android:text="@string/tv_miaohi_assistant"
+            android:textColor="@color/color_1d"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_message_system_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_message_system_head"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="50dp"
+            android:gravity="top"
+            android:textColor="@color/color_1d"
+            android:textSize="12dp"
+            tools:text="这里是发布的信息" />
+
+        <TextView
+            android:id="@+id/tv_message_system_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_message_system_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_message_system_head"
+            android:textColor="@color/color_c4"
+            android:textSize="9dp"
+            tools:text="发送时间" />
+
+        <ImageView
+            android:id="@+id/iv_rightarrow"
+            style="@style/minerightarrow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_message_system_time"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/color_df" />
+    </RelativeLayout>
+</LinearLayout>

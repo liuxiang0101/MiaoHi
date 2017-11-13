@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/color_df"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="1px">
+
+    <EditText
+        android:id="@+id/et_search_user"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/shape_search_bg"
+        android:drawableLeft="@drawable/svg_icon_search"
+        android:drawablePadding="10dp"
+        android:hint="@string/hint_search_good_friend"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/gray_text_1"
+        android:textCursorDrawable='@null'
+        android:textSize="14dp" />
+</LinearLayout>
+

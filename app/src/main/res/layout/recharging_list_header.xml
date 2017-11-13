@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@drawable/red_recharging_bg"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/textview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/balance_title"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            tools:text="22296.60" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_balance"
+            android:layout_below="@+id/textview_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_balance"
+            android:gravity="center"
+            android:text="嗨币"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/choose_trading_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rl_top"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/choose_trading_text"
+        android:textColor="@color/gray_text_1"
+        android:textSize="14dp" />
+
+</LinearLayout>

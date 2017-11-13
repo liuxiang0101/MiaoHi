@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/maincontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_tab" />
+
+    <TextView
+        android:id="@+id/tv_qipao_shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/qipao1"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:text="@string/tv_click_to_shot"
+        android:textColor="#ccffffff"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/home_tab"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_1d"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rl_home"
+            style="@style/HomeTab">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_hometab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/selector_home_first_page" />
+
+                <TextView
+                    android:id="@+id/tv_refreshcountbubble"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignRight="@+id/iv_hometab"
+                    android:layout_alignTop="@+id/iv_hometab"
+                    android:layout_marginRight="-5dp"
+                    android:layout_marginTop="-2dp"
+                    android:background="@drawable/shape_bubble_dot"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_home"
+                style="@style/HomeTab_text"
+                android:layout_below="@+id/iv_hometab"
+                android:layout_centerHorizontal="true"
+                android:text="首页"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_active"
+            style="@style/HomeTab">
+
+            <ImageView
+                android:id="@+id/iv_activetab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/selector_home_wenda" />
+
+            <TextView
+                android:id="@+id/tv_active"
+                style="@style/HomeTab_text"
+                android:layout_below="@+id/iv_activetab"
+                android:layout_centerHorizontal="true"
+                android:text="映答"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/HomeTab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/make_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:src="@drawable/selector_home_make_picture" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_discover"
+            style="@style/HomeTab">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_discovertab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/selector_home_found" />
+
+                <TextView
+                    android:id="@+id/tv_mainminetab_bubblecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_toRightOf="@+id/iv_discovertab"
+                    android:background="@drawable/promptbubble_little_shape"
+                    android:gravity="center"
+                    android:minHeight="12dp"
+                    android:minWidth="12dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="9dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_discover"
+                style="@style/HomeTab_text"
+                android:layout_below="@+id/iv_discovertab"
+                android:layout_centerHorizontal="true"
+                android:text="消息"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_mine"
+            style="@style/HomeTab">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_minetab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/selector_home_mine" />
+
+                <TextView
+                    android:id="@+id/tv_mainminetab_bubbledot"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_toRightOf="@+id/iv_minetab"
+                    android:background="@drawable/shape_bubble_dot"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_mine"
+                style="@style/HomeTab_text"
+                android:layout_below="@+id/iv_minetab"
+                android:text="我的"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_showpicturemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6000000"
+        android:visibility="gone">
+
+        <com.haiqiu.miaohi.view.picturezoom.PhotoView
+            android:id="@+id/pv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </FrameLayout>
+</RelativeLayout>

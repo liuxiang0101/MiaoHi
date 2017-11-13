@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.haiqiu.miaohi.view.CommonPersonalInfoView
+        android:id="@+id/cpiv_qahomeheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_qahomejob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_1d"
+        android:textSize="12dp"
+        tools:text="灵鹫宫宫主, 天山童姥" />
+
+    <TextView
+        android:id="@+id/tv_qahomedescribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_999"
+        android:textSize="12dp"
+        tools:text="爱词霸英语为广大网友提供在线翻译、在线词典、英语口语、英语学习资料、汉语词典，金山词霸下载等服务，致力于为您提供优质权威的在线英语服务，是5000万英语 " />
+
+    <TextView
+        android:id="@+id/tv_qahomeincome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_1d"
+        android:textSize="12dp"
+        tools:text="总收入 22嗨币" />
+
+    <View
+        style="@style/common_mini_line_d6"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_answerandcirclesee_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="11dp">
+
+        <TextView
+            android:id="@+id/tv_qahomeanswercount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp"
+            tools:text="回答 24" />
+        <TextView
+            android:id="@+id/tv_qahomecircuseedcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp"
+            tools:text="被围观 234" />
+
+    </LinearLayout>
+
+</LinearLayout>

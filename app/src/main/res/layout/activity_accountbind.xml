@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/title_account_bind" />
+
+    <RelativeLayout
+        android:id="@+id/rl_accountbind_phone"
+        style="@style/bindAccount">
+
+        <ImageView
+            android:id="@+id/iv_accountbind_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/svg_accountbind_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_accountbind_phone"
+            android:text="@string/tv_phone_number"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_phonename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_1d"
+            android:textSize="14dp"
+            android:visibility="gone"
+            tools:text="mingming" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_phonebtn"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_bindbtn"
+            android:gravity="center"
+            android:text="@string/tv_bind"
+            android:textColor="@color/color_1d"
+            android:textSize="13dp" />
+
+        <View
+            style="@style/common_mini_line_df"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="9dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accountbind_wechat"
+        style="@style/bindAccount">
+
+        <ImageView
+            android:id="@+id/iv_accountbind_wechat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/svg_wechat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_accountbind_wechat"
+            android:text="@string/share_window_wx"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_wechatname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_1d"
+            android:textSize="14dp"
+            android:visibility="gone"
+            tools:text="mingming" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_wechatbtn"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_bindbtn"
+            android:gravity="center"
+            android:text="@string/tv_bind"
+            android:textColor="@color/color_1d"
+            android:textSize="13dp" />
+
+        <View
+            style="@style/common_mini_line_df"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="9dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accountbind_qq"
+        style="@style/bindAccount">
+
+        <ImageView
+            android:id="@+id/iv_accountbind_qq"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/svg_qq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_accountbind_qq"
+            android:text="@string/share_window_qq"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_qqname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_1d"
+            android:textSize="14dp"
+            android:visibility="gone"
+            tools:text="mingming" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_qqbtn"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_bindbtn"
+            android:gravity="center"
+            android:text="@string/tv_bind"
+            android:textColor="@color/color_1d"
+            android:textSize="13dp" />
+
+        <View
+            style="@style/common_mini_line_df"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="9dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_accountbind_sina"
+        style="@style/bindAccount">
+
+        <ImageView
+            android:id="@+id/iv_accountbind_sina"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/svg_sina" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_accountbind_sina"
+            android:text="@string/share_window_sina"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_sinaname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_1d"
+            android:textSize="14dp"
+            android:visibility="gone"
+            tools:text="mingming" />
+
+        <TextView
+            android:id="@+id/tv_accountbind_sinabtn"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_bindbtn"
+            android:gravity="center"
+            android:text="@string/tv_bind"
+            android:textColor="@color/color_1d"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+    <View style="@style/common_mini_line_df" />
+
+</LinearLayout>

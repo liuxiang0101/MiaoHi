@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="185dp"
+        android:background="@drawable/line_df_5_radius_selector"
+        android:orientation="vertical">
+
+        <com.haiqiu.miaohi.view.MyCircleView
+            android:id="@+id/iv_head"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/head_default" />
+
+        <ImageView
+            android:id="@+id/iv_vip_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_head"
+            android:layout_alignRight="@+id/iv_head"
+            android:src="@drawable/vip_big"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6dp"
+            android:singleLine="true"
+            android:text="用户名"
+            android:textColor="@color/color_1d"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:lines="2"
+            android:text="用户头衔"
+            android:textColor="@color/color_999"
+            android:textSize="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_addention"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:background="@drawable/tag_bg"
+                android:gravity="center"
+                android:text="已关注"
+                android:textColor="@color/color_c4"
+                android:textSize="10dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress_attention"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/found_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="发现更多..."
+                android:textColor="@color/color_1d"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_interval"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

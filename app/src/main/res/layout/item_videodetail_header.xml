@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:visibility="gone">
+
+        <com.haiqiu.miaohi.view.MyCircleView
+            android:id="@+id/mcv_videodetail_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/head_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/rl_videodetail_attention"
+            android:layout_toRightOf="@+id/mcv_videodetail_header"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_videodetail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/color_666"
+                android:textSize="15dp"
+                tools:text="name" />
+
+            <TextView
+                android:id="@+id/tv_videodetaildescription"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/gray_text_1"
+                android:textSize="12dp"
+                android:visibility="gone"
+                tools:text="唔哈哈哈" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_videodetail_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/font_color"
+                    android:textSize="12dp"
+                    tools:text="saveTime" />
+
+                <ImageView
+                    android:id="@+id/iv_videodetail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/tv_videodetail_date"
+                    android:layout_toRightOf="@+id/tv_videodetail_date"
+                    android:src="@drawable/svg_playcount" />
+
+                <TextView
+                    android:id="@+id/tv_videodetail_playcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/iv_videodetail_time"
+                    android:layout_toRightOf="@+id/iv_videodetail_time"
+                    android:singleLine="true"
+                    android:textColor="@color/font_color"
+                    android:textSize="12dp"
+                    tools:text="551511111111万" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_videodetail_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_videodetail_attention"
+                style="@style/attention_style"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress_attention"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_videodetail_headervip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mcv_videodetail_header"
+            android:layout_alignRight="@+id/mcv_videodetail_header"
+            android:src="@drawable/svg_vip_big"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bigvideoview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.haiqiu.miaohi.widget.mediaplayer.VideoViewWrap
+            android:id="@+id/vvw_videodetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.haiqiu.miaohi.widget.PraiseImageView
+            android:id="@+id/iv_imgdetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_videoandimgdetail_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/shape_subjectblack"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:text="#雪上极限帆船，挑战自己#" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_videodetail_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_videodetail_functionline"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="5dp"
+        android:padding="10dp"
+        android:textColor="@color/color_666"
+        android:textSize="15dp"
+        tools:text="超爽无比的运动,天气也是很给力.跟我飞起来.超爽无比的运动,天气也是很给力.跟我飞起来.超爽无比的运动,天气也是很给力.跟我飞起来." />
+
+    <TextView
+        android:id="@+id/tv_videoandimg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_videodetail_describe"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/color_c4"
+        android:textSize="10dp"
+        tools:text="1分钟前" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_videoandimg_praise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_praiselist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_videoandimgpraise_count"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/tag_bg"
+            android:drawableLeft="@drawable/attentionpraise"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/color_1d"
+            tools:text="48" />
+
+    </LinearLayout>
+
+    <View style="@style/common_mini_line_d6" />
+
+    <TextView
+        android:id="@+id/tv_videodetail_totalcomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/common_bg"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/color_1d"
+        android:textSize="12dp"
+        tools:text="评论 (3278)" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_videodetail_function"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_videodetail_praise"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_videodetail_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/svg_videodetail_zanred" />
+
+                <TextView
+                    android:id="@+id/tv_videodetail_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/font_color"
+                    android:textIsSelectable="false"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_videodetail_gift"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_videodetail_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/svg_icon_gift" />
+
+                <TextView
+                    android:id="@+id/tv_videodetail_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/font_color"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/v_videodetail_sendgiftline"
+                style="@style/VerticalLine"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_videodetail_subject"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_videodetail_inviteinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/color_666"
+                android:textSize="14dp"
+                tools:text="参加#test#专题" />
+
+            <TextView
+                android:id="@+id/tv_videodetail_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_videodetail_inviteinfo"
+                android:text="邀请"
+                android:textColor="@color/color_666"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_videodetail_totalcommentparent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/rl_videodetail_subject"
+            android:background="@color/common_bg" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.haiqiu.miaohi.view.CommonPersonalInfoView
+        android:id="@+id/qa_attentionheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_attentionqa"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.haiqiu.miaohi.widget.mediaplayer.VideoViewWrap
+            android:id="@+id/vvw_attentionqa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_itemattention_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_limit_free_radius_red_selector">
+
+            <ImageView
+                android:id="@+id/iv_attentioinbtn_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/circuseeplay" />
+
+            <TextView
+                android:id="@+id/tv_attentioinbtn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/iv_attentioinbtn_icon"
+                android:text="限时免费"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_attentionqatext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_1b"
+        android:textColor="@color/white"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textSize="12dp"
+        android:lineSpacingExtra="2dp"
+        tools:text="假如没有这样的API，我们要自己实现，可以怎么做呢。这里比较绕的地方就是单击和双击事件都要照顾，但二者又"/>
+    <LinearLayout
+        android:id="@+id/ll_attentioncircusee"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_attention_qa_circuseecount"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/circuseeed" />
+
+        <TextView
+            android:id="@+id/tv_attention_qa_circuseecount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/fontblue"
+            android:textSize="13dp"
+            tools:text="937" />
+
+        <ImageView
+            android:id="@+id/iv_attention_qa_share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/attentionshare" />
+
+        <TextView
+            android:id="@+id/tv_attention_qa_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="9.27/11:12"
+            android:textColor="@color/color_999"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <View style="@style/common_mini_line_df"/>
+</LinearLayout>

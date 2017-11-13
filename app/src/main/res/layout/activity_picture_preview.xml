@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1d"
+    android:orientation="vertical"
+    tools:context="com.haiqiu.miaohi.activity.PicturePreviewActivity">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="继续" />
+
+    <FrameLayout
+        android:id="@+id/fl_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <org.wysaid.view.ImageGLSurfaceView
+            android:id="@+id/gl_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.haiqiu.miaohi.widget.decal.DecalView
+            android:id="@+id/decal_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:delete_image="@drawable/paishetiezhiguanbi"
+            app:delete_image_height="22.5dp"
+            app:delete_image_width="22.5dp"
+            app:image_height="100dp"
+            app:image_width="100dp"
+            app:push_image="@drawable/paishetiezhitiaozheng"
+            app:push_image_height="22.5dp"
+            app:push_image_width="22.5dp" />
+
+        <ImageView
+            android:id="@+id/iv_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@drawable/paishexuanzhuan" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="5dp" />
+
+    <com.haiqiu.miaohi.widget.tablayout.CommonTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="#262626"
+        app:tl_indicator_anim_enable="false"
+        tl:tl_iconVisible="true"
+        tl:tl_indicator_height="5dp"
+        tl:tl_indicator_style="ARC"
+        tl:tl_indicator_width="10dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/color_666"
+        tl:tl_textsize="12dp" />
+
+</LinearLayout>

@@ -1,0 +1,293 @@
+<resources>
+    <string name="app_name">秒嗨</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_get_verify_number">获取验证码</string>
+    <string name="label_resend_verify_number">重发验证码</string>
+
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="crop__pick_error">No image sources available</string>
+
+    <string name="crop__done">确定</string>
+    <string name="crop__cancel">取消</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--<string name="pull_to_refresh_pull_label">下拉刷新…</string>-->
+    <!--<string name="pull_to_refresh_release_label">放开以刷新…</string>-->
+    <!--<string name="pull_to_refresh_refreshing_label">正在载入…</string>-->
+
+    <string name="personal_page_no_video_self">快来发布你的第一个视频吧!</string>
+    <string name="personal_page_no_fans_self">还没有人关注你T_T</string>
+    <string name="personal_page_no_attention_self">你还没有关注别人，快去发现有趣的人吧！</string>
+    <string name="personal_page_no_question_self_common">你还没有提问和围观任何问题哦！</string>
+    <string name="personal_page_no_question_self_start">快去找个有趣的问题围观一下吧！</string>
+
+    <string name="personal_page_no_video_other">这里空空的，什么也没有…</string>
+    <string name="personal_page_no_fans_other">Ta还没有粉丝，要成为Ta的第一个粉丝吗?</string>
+    <string name="personal_page_no_attention_other">Ta没有关注的人，看起来很高冷的样子…</string>
+    <string name="personal_page_no_question_other_common">Ta还没有提问和围观任何问题哦！</string>
+    <string name="personal_page_no_question_other_start">Ta还没有回答和围观任何问题哦！</string>
+    <string name="isSwipe">isSwipe</string>
+    <string name="question_suffix">的提问</string>
+    <string name="ask_suffix">回答了</string>
+    <string name="tv_answer">回答</string>
+    <string name="space">&#160;&#160;</string>
+
+    <!-- 频道拖动编辑页面 -->
+    <string name="all_channels">全部频道</string>
+    <string name="drag_to_move">按住拖动可排序</string>
+
+    <!--消息及其子界面相关-->
+    <string name="title_msg">消息</string>
+    <string name="title_msg_system">秒嗨小助手</string>
+    <string name="title_msg_system_empty">暂无系统消息</string>
+    <string name="title_msg_at_me">\@我的</string>
+    <string name="title_msg_at_me_empty">暂无@我的</string>
+    <string name="title_msg_beinvited">受邀专题</string>
+    <string name="title_msg_beinvited_empty">暂无受邀专题</string>
+    <string name="title_msg_comment">评论消息</string>
+    <string name="title_msg_comment_empty">暂无评论消息</string>
+    <string name="title_msg_newfriend">新的好友</string>
+    <string name="title_msg_newfriend_enpty">暂无新的好友</string>
+    <string name="title_msg_receivezan">收到的赞</string>
+    <string name="title_msg_receivezan_empty">暂无收到的赞</string>
+
+    <string name="tv_new_msg_notify">新消息通知</string>
+    <string name="tv_new_qa_msg_notify">映答消息通知</string>
+    <string name="tv_msg_switch_comment">评论</string>
+    <string name="tv_msg_switch_new_fans">新的粉丝</string>
+    <string name="tv_msg_switch_i_ask">我问的</string>
+    <string name="tv_msg_switch_ask_me">问我的</string>
+    <string name="tv_msg_switch_observer">围观的</string>
+
+    <!--视频添加描述界面相关-->
+    <string name="title_msg_add_describe">添加描述</string>
+    <string name="et_hint_add_describe">添加秒嗨心情~</string>
+    <string name="bt_add_describe_atfriend">\@好友</string>
+    <string name="bt_add_describe_join">参加专题</string>
+    <string name="bt_upload_video">发布</string>
+    <string name="tv_msg">滑动选择一张封面</string>
+
+    <string name="title_select_good_friend">选择好友</string>
+    <string name="hint_search_good_friend">搜索好友</string>
+    <string name="hint_search">搜索你想要的</string>
+
+    <string name="title_select_join_subject">选择参加专题</string>
+    <string name="title_personal_index">个人主页</string>
+    <string name="title_send_expression">所送表情</string>
+    <string name="title_share">分享</string>
+    <string name="title_notify">通知</string>
+    <string name="title_share_right">完成</string>
+    <string name="title_video_preview">视频预览</string>
+    <string name="title_send_praise">送的赞</string>
+    <string name="title_select_video">本地选择</string>
+    <string name="title_video_info">视频详情</string>
+    <string name="title_interlocution_detail">映答详情</string>
+    <string name="click_to_play">点击播放</string>
+    <string name="title_wealth">财富</string>
+    <string name="title_found">发现</string>
+    <string name="text_private">私密</string>
+    <string name="hai_currency">嗨币</string>
+    <string name="i_also_want_to_ask">我也要问</string>
+    <string name="worth_a_look">值得一看</string>
+    <!--引导图气泡文字-->
+    <string name="tv_click_to_shot">点击开启拍摄之旅吧!</string>
+
+    <string name="tv_select_payment_method">选择支付方式</string>
+    <string name="tv_wx_pay">微信支付</string>
+    <string name="tv_alipay">支付宝支付</string>
+
+    <string name="tv_total_comment">总评论</string>
+    <string name="tv_vip_comment">大咖评论</string>
+
+    <string name="tv_sure_want_to_exit">您确定要退出当前账户吗?</string>
+
+    <!--我的-界面文字-->
+    <string name="tv_video">视频</string>
+    <string name="title_mine">我的</string>
+    <string name="tv_give_fabulous">送出赞</string>
+    <string name="tv_receive_gift">收到礼物</string>
+    <string name="tv_open_qa">开通映答</string>
+    <string name="tv_fan">粉丝</string>
+    <string name="tv_attention">关注</string>
+    <string name="tv_find_good_friends">找好友</string>
+    <string name="tv_qa">映答</string>
+    <string name="tv_message">消息</string>
+    <string name="tv_drafts">草稿箱</string>
+    <string name="tv_wallet">钱包</string>
+    <string name="tv_setting">设置</string>
+    <string name="tv_confirm_opening">确认开通</string>
+    <string name="tv_miaohi_assistant">秒嗨小助手</string>
+    <!--开通映答-->
+    <string name="tv_your_title">你的头衔</string>
+    <string name="tv_ask_me_need_to_pay">向我提问需要支付</string>
+    <string name="hint_do_not_posing">(不要冒充大咖,会被举报哦~)</string>
+    <string name="hint_title_option">足球运动员，网球王子，金牌教练员</string>
+    <string name="hint_be_goot_at_describe">如何迎娶白富美?肌肉拉伤怎样快速回复？范冰冰为什么不和李晨结婚生孩子？你问啥我会啥。</string>
+    <string name="tv_you_are_good_at">你擅长回答的问题</string>
+    <string name="tv_change_qa_price_rule">注：1嗨币=1元，1天只能更改1次提问金额嗷～</string>
+    <string name="tv_change_qa_price_rule1">注：凌晨24:00后可再次更改提问金额，1天只能更改1次嗷～</string>
+
+    <!--手机号注册界面相关-->
+    <string name="title_phone_registe">还没有秒嗨账号?去注册</string>
+    <string name="et_hint_input_phone_number">请输入手机号</string>
+    <string name="et_hint_input_new_password">请输入新密码(6-20位数字或英文)</string>
+    <string name="et_hint_input_verification_code">请输入验证码</string>
+    <string name="tv_get_verification_code">获取验证码</string>
+    <string name="bt_next_step">下一步</string>
+    <string name="tv_agree_useragreement">登录即代表您已同意</string>
+    <string name="tv_useragreement">《秒嗨用户协议》</string>
+    <string name="tv_login_agree">登录即表示您已同意</string>
+    <string name="tv_register_agree">注册即表示您已同意</string>
+    <!--个人设置界面相关-->
+    <string name="title_personal_setting">个人设置</string>
+    <string name="title_personal_setting_right">保存</string>
+    <string name="tv_save_user_icon">更换头像</string>
+    <string name="tv_nickname">昵称</string>
+    <string name="tv_fill_nickname">填写昵称</string>
+    <string name="tv_sex">性别</string>
+    <string name="tv_area">地区</string>
+    <string name="tv_birthday">生日</string>
+    <!--所收礼物界面相关-->
+    <string name="title_receive_gift">所收礼物</string>
+    <string name="tv_no_net">网络不给力呀，等下试试吧。。。</string>
+    <string name="tv_no_data">没有数据</string>
+    <!--设置界面相关-->
+    <string name="title_setting">设置</string>
+    <string name="tv_show_message_info">通知设置</string>
+    <string name="tv_clear_cache">清空缓存</string>
+    <string name="tv_idea_feedback">意见反馈</string>
+    <string name="tv_vip_authentication">秒嗨认证</string>
+    <string name="tv_account_bind">账号绑定</string>
+    <string name="tv_about_miaohi">关于秒嗨</string>
+    <string name="title_wallet">钱包</string>
+    <string name="tv_confirmation_recharge">确认充值</string>
+    <string name="tv_wallet_balance">钱包余额(嗨币)</string>
+    <string name="tv_1haibi">1元=1嗨币</string>
+    <string name="tv_income_this_month">收入(嗨币)</string>
+    <string name="tv_accumulated_income">支出(嗨币)</string>
+    <string name="tv_recharge_privilege">充值特权</string>
+    <string name="tv_get_hi_currency">获得嗨币</string>
+    <string name="tv_pay_for_gifts">购买付费礼物</string>
+    <string name="tv_pay_question">付费提问</string>
+    <string name="tv_one_yuan_onlookers">一元围观</string>
+    <string name="tv_answer_questions">回答提问</string>
+    <string name="tv_question_by_onlookers">提问被围观</string>
+    <string name="tv_receive_pay_gifts">收到付费礼物</string>
+    <string name="tv_wifi_auto_play">WIFI自动播放</string>
+    <string name="tv_exit_the_account">退出当前账号</string>
+    <!--意见反馈界面相关-->
+    <string name="et_hint_feedback_content">请您描述您遇到的问题或者对我们的建议，我们会努力改善哒~</string>
+    <string name="et_hint_feedback_contact_information">您的联系方式：邮箱/QQ/电话号（选填）</string>
+    <string name="bt_commit">提交</string>
+    <!--意见反馈界面相关-->
+    <string name="text_miaohi_user_protocol">秒嗨用户协议</string>
+    <string name="text_miaohi_user_protocol_url">http://weixin.miaohi.com/protocol/xieyi.html</string>
+
+    <string name="text_miaohi_communityt_rule">秒嗨社区管理规则</string>
+    <string name="text_miaohi_communityt_rule_url">http://weixin.miaohi.com/protocol/manage.html</string>
+
+    <string name="text_ask_and_question">映答社区发布规则</string>
+    <string name="text_ask_and_question_url">http://weixin.miaohi.com/protocol/yingda.html</string>
+
+    <string name="text_wealth_description">财富说明</string>
+    <string name="text_wealth_description_url">http://weixin.miaohi.com/protocol/yingda_wealth.html</string>
+
+    <!--大咖认证H5界面-->
+    <string name="vip_authentication_url">http://weixin.miaohi.com/ident/indent.html</string>
+
+    <string name="tv_check_version_update">检测版本更新</string>
+    <!--开通映答H5界面-->
+    <string name="open_qa_url">http://res.release.miaohi.com/miaohiapp/inner.html</string>
+    <!--钱包特权文字-->
+    <string name="privilege1">充值后可以购买付费礼物，赠予优秀的视频用户啦～</string>
+    <string name="privilege2">充值后可以向大咖们提问啦～</string>
+    <string name="privilege3">充值后可以围观感兴趣的映答，只要1元噢～</string>
+    <string name="get_hi_coin1">回答多多，嗨币多多～</string>
+    <string name="get_hi_coin2">提问也有嗨币拿？是哒，就是这么任性～</string>
+    <string name="get_hi_coin3">收到付费礼物后也能获得嗨币噢～</string>
+    <!--找好友界面相关-->
+    <string name="tv_star">明星达人</string>
+    <string name="tv_possable_intersting_people">可能感兴趣的人</string>
+    <!--登录界面相关-->
+    <string name="et_hint_input_password">请输入密码</string>
+    <string name="tv_login">登录</string>
+    <string name="tv_center_spot">···</string>
+    <string name="tv_phone_number">手机号</string>
+    <string name="tv_register">注册</string>
+    <string name="tv_next_quarter">下一步(1/4)</string>
+    <string name="tv_next_two_quarters">下一步(2/4)</string>
+    <string name="tv_next_three_quarters">下一步(3/4)</string>
+    <string name="tv_skip">跳过</string>
+    <string name="tv_register_finish">完成注册</string>
+    <string name="tv_next">下一步</string>
+    <string name="tv_next_set_password">下一步  设置密码</string>
+    <string name="tv_confirm_attention">确认关注</string>
+    <string name="tv_please_set_password">请设置密码</string>
+    <string name="tv_input_your_phone_number">请输入你的手机号</string>
+    <string name="welcome_to_miaohi">欢迎来到秒嗨</string>
+    <string name="tv_short_message_has_send">短信验证码已发送至</string>
+    <string name="tv_verification_code_fail">验证失败，请检查后重新输入</string>
+    <string name="tv_perfect_information">完善资料,方便好友认出你</string>
+    <string name="tv_ignore">忽略,下次再说</string>
+    <string name="tv_recommend_user">Hi,选择你可能感兴趣的人</string>
+    <string name="tv_recommend_user_prompt">人,关注后你将收到Ta们的动态</string>
+    <string name="tv_password_rule">6-20位数字或字母</string>
+    <string name="tv_forget_password"><u>忘记密码？</u></string>
+    <string name="tv_phone_register"><u>使用手机号注册</u></string>
+    <string name="tv_casual_to_see"><u>随便看看</u></string>
+    <string name="tv_the_third_login">或者采用以下方式登录</string>
+    <string name="tv_bound_phonenumber">绑定手机号更安全</string>
+    <string name="tv_bound_phonenumber_after">绑定之后,可以使用手机号直接登录</string>
+    <!--绑定相关-->
+    <string name="title_account_bind">账号绑定</string>
+    <string name="tv_bind">绑定</string>
+    <string name="bindwechatmessage">1. 您回答问题后的收益会存入此次授权的微信钱包内\n 2. 问题被其他用户付费围观后,所获收益也会存入此次授权的微信钱包内\n3. 绑定成功后,您可以直接使用您的微信号登录秒嗨</string>
+
+    <string name="bubble_join_special">点击参加专题</string>
+    <string name="tv_version_update">版本更新</string>
+
+    <!--钱包相关-->
+    <string name="trading_record">交易记录</string>
+    <string name="recharging_record">充值记录</string>
+    <string name="recharging">去充值</string>
+    <string name="recharging_title">充值</string>
+    <string name="network_error_message">点击重试</string>
+    <string name="empty_page_message">好尴尬，连根毛都没有…</string>
+    <string name="balance_title">余额</string>
+    <string name="choose_trading_text">请选择充值金额(1元 = 1嗨币)</string>
+    <string name="trading_problem"><u>遇到充值问题？</u></string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="input_money">请输入充值金额</string>
+    <string name="problem_text">请联系我们\n客服QQ：3422247725\n客服邮箱：kefu001@miaohi.com</string>
+    <string name="explain_html">http://weixin.miaohi.com/protocol/yingda_wealth.html</string>
+
+    <string name="tv_you_give_fabulous">你赞了</string>
+    <string name="tv_video_of">的视频</string>
+    <string name="tv_give_fabulous_to_your_video">赞了你的视频</string>
+
+    <!-- 版本升级 -->
+    <string name="activity_soft_update_tittle_loading">升级中。。。</string>
+    <string name="activity_soft_update_tittle_warning">版本更新</string>
+    <string name="activity_soft_update_dialog_confirm_tip">更新</string>
+    <string name="activity_soft_update_install_tips">最新版本已下载，是否安装？</string>
+    <string name="activity_soft_update_no_notify">下次不再提示</string>
+    <string name="activity_soft_update_install_ensure">去升级</string>
+    <string name="activity_soft_update_install_cancel">取消</string>
+
+    <string name="share_window_qq">QQ</string>
+    <string name="share_window_qzone">QQ空间</string>
+    <string name="share_window_wxcircle">朋友圈</string>
+    <string name="share_window_wx">微信</string>
+    <string name="share_window_sina">微博</string>
+    <string name="share_window_copy">复制链接</string>
+
+    <!--分享-->
+    <string name="share_personalHome">我在秒嗨发现一个牛X人，就差你啦～</string>
+    <string name="share_qaHome">我在秒嗨发现一个牛X人，快来提问呀～</string>
+    <string name="share_bottomstr">秒嗨·敢想敢放肆</string>
+    <string name="share_sinaqrtip">扫描二维码查看更多</string>
+
+</resources>

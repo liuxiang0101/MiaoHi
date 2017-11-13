@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+    <!--轮播图-->
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <com.haiqiu.miaohi.widget.CarouselImageView
+        android:id="@+id/carousel_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignTop="@+id/view" />
+
+    <!--可能感兴趣的人(卡片)-->
+    <RelativeLayout
+        android:id="@+id/rl_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carousel_imageview">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="11dp"
+            android:gravity="center"
+            android:text="你可能感兴趣的人"
+            android:textColor="@color/color_1d"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_discover_more"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:gravity="center"
+            android:text="发现更多"
+            android:textColor="@color/blue_darkandlight_selector"
+            android:textSize="12dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontal_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_below="@+id/tv_discover_more"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+</RelativeLayout>

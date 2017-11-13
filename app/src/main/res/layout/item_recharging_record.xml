@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/item_record_centent_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_666"
+            android:textSize="15dp"
+            tools:text="微信充值" />
+
+        <TextView
+            android:id="@+id/item_discount"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/item_record_centent_name_text"
+            android:background="@drawable/shape_favourable_red_bg"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            tools:text="送28" />
+
+        <TextView
+            android:id="@+id/item_record_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/item_discount"
+            android:textColor="@color/font_color"
+            android:textSize="12dp"
+            tools:text="充值失败" />
+
+        <TextView
+            android:id="@+id/item_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_record_centent_name_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/font_color"
+            android:textSize="10dp"
+            tools:text="2016-08-17 14:30:26" />
+
+        <TextView
+            android:id="@+id/money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_333"
+            android:textSize="18dp"
+            tools:text="￥128" />
+    </RelativeLayout>
+</LinearLayout>

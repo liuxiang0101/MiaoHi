@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_showgift"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_sun"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/videodetail_sendgift_sun" />
+
+        <ImageView
+            android:id="@+id/iv_gift"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <com.haiqiu.miaohi.widget.GiftGrideViewLayout
+        android:id="@+id/ggl_giftgride"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/gift_selector_display_are"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:alpha="0.9"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/gift_selector_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="225.0dip" />
+
+
+            <com.haiqiu.miaohi.widget.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/color_df" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/gift_selector_residuals_are"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_below="@id/gift_selector_display_are"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/gift_selector_account"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="我的嗨币："
+                    android:textColor="@color/color_666"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_gift_selector_residuals_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fe6262"
+                    android:textSize="18.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10.0dip"
+                    android:text="@string/recharging_title"
+                    android:textColor="@color/common_blue2"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/gift_selector_use"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/bg_gift_corner_6_selector"
+                android:gravity="center"
+                android:text="赠送"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/gift_selector_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_below="@+id/gift_selector_residuals_are" />
+
+        <RelativeLayout
+            android:id="@+id/gift_selector_combos_are"
+            android:layout_width="65.0dip"
+            android:layout_height="65.0dip"
+            android:layout_above="@+id/gift_selector_line"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="6.0dip"
+            android:layout_marginRight="10.0dip"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="14.0dip"
+                android:layout_height="14.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:indeterminateDrawable="@drawable/progress_attention"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </com.haiqiu.miaohi.widget.GiftGrideViewLayout>
+</LinearLayout>
+

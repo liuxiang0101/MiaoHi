@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--头部标题栏-->
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="@string/tv_skip"
+        app:titleText="绑定手机号" />
+    <!--页面提示语句-->
+    <TextView
+        android:id="@+id/tv_page_prompt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_bound_phonenumber"
+        android:textColor="@color/color_1d"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_page_prompt_msg"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_bound_phonenumber_after"
+        android:textColor="@color/color_c4"
+        android:textSize="14dp" />
+    <!--&lt;!&ndash;不同国家区号选择&ndash;&gt;-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_select_country"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_below="@+id/tv_page_prompt_msg"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="20dp"-->
+    <!--android:paddingRight="20dp"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_country"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="中国" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_toRightOf="@+id/tv_country"-->
+    <!--android:text="+86" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:src="@drawable/svg_to_right_arrow_big" />-->
+    <!--</RelativeLayout>-->
+
+    <!--手机号-->
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_msg"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="25dp"
+        android:background="@null"
+        android:hint="请输入你的手机号"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textColor="@color/color_1d"
+        android:textColorHint="@color/color_c4"
+        android:textSize="30dp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/et_phone_number"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_df" />
+
+    <!--下一步按钮-->
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_df"
+        android:gravity="center"
+        android:text="下一步(1/3)"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+    <!--服务器返回的提示信息-->
+    <TextView
+        android:id="@+id/tv_button_prompt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color_c4"
+        android:textSize="12dp"
+        tools:text="该手机号已绑定，请重新输入" />
+
+
+</RelativeLayout>

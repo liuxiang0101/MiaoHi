@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_attentionnolast"
+        android:layout_width="130dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/line_df_5_radius_selector"
+        android:visibility="visible">
+
+        <com.haiqiu.miaohi.view.MyCircleView
+            android:id="@+id/mcv_attention_childhead"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/head_default" />
+
+        <ImageView
+            android:id="@+id/iv_attention_childvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mcv_attention_childhead"
+            android:layout_alignRight="@+id/mcv_attention_childhead"
+            android:src="@drawable/vip_big" />
+
+        <TextView
+            android:id="@+id/tv_attention_childname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mcv_attention_childhead"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_1d"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            tools:text="穆里尼奥" />
+
+        <TextView
+            android:id="@+id/tv_attention_childdescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_attention_childname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center|left"
+            android:lines="2"
+            android:textColor="@color/color_999"
+            android:ellipsize="end"
+            android:textSize="10dp"
+            tools:text="前国家队主教练,2001年世界杯国脚fdfdfdfdfdfdfdfdfdfdfdf" />
+
+        <TextView
+            android:id="@+id/tv_attention_childattention"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_attentionselection"
+            android:gravity="center"
+            android:text="关注"
+            android:textColor="@color/fontblue"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_attention_childdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp" />
+
+        <ImageView
+            android:id="@+id/iv_attentionrecommendclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="7dp"
+            android:src="@drawable/recommendclose" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_attentionlast"
+        android:layout_width="130dp"
+        android:layout_height="185dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/line_df_5_radius_selector"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/found_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="发现更多..."
+                android:textColor="@color/color_1d"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

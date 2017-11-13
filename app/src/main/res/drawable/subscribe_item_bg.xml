@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <stroke android:width="0.5px" android:color="@color/gray_text_1" android:dashGap="0dip" android:dashWidth="0px"/>
+
+                    <solid android:color="@color/gray_text_1"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <stroke android:width="0.5px" android:color="@color/gray_text_1"/>
+
+            <solid android:color="@color/subscribe_item_selected_bg"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <stroke android:width="0.5px" android:color="@color/subscribe_item_disabled_stroke"/>
+
+            <solid android:color="@color/subscribe_item_disabled_bg"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="0.5px" android:color="@color/subscribe_item_pressed_stroke"/>
+
+            <solid android:color="@color/subscribe_item_pressed_bg"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="0.5px" android:color="@color/subscribe_item_normal_stroke"/>
+
+            <solid android:color="@color/subscribe_item_normal_bg"/>
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_videodetail_dialogselect"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_videodetail_dialog_giftselect">
+
+        <ImageView
+            android:id="@+id/iv_itemvideodetail_dialogheader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_itemvideodetail_dialogtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="冠军戒指"
+            android:visibility="gone"
+            android:textColor="@color/color_666"
+            android:textSize="8dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_itemvideodetail_dialogname"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:singleLine="true"
+        tools:text="姚明送"
+        android:textColor="@color/font_color"
+        android:textSize="10dp" />
+</LinearLayout>

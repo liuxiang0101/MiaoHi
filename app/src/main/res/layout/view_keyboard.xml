@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_videodetail_bottominput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_f1"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/iv_emoji_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/selector_keyboard_btn"
+            android:button="@null" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_videodetail_input_gayconor"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <com.haiqiu.miaohi.view.NoteEditText
+                android:id="@+id/et_videodetail_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_invitefriend"
+                android:background="@color/white"
+                android:hint=" 发射评论... (500字)"
+                android:maxLength="501"
+                android:maxLines="5"
+                android:minHeight="35dp"
+                android:paddingLeft="4dp"
+                android:textColorHint="@color/color_ccc"
+                android:textSize="14dp" />
+
+
+            <ImageView
+                android:id="@+id/iv_invitefriend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_videodetail_input"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="12dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/invitefriend"
+                android:textColor="@color/font_color" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/et_videodetail_input"
+                android:layout_alignTop="@+id/et_videodetail_input"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/iv_invitefriend"
+                android:background="@color/color_df"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_videodetail_send"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:background="@drawable/corner_blue_selector"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_keyboardlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            style="@style/HorizontalLine"
+            android:background="@color/color_ccc" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:paddingTop="2dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_emoji_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/color_fa"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_eee">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/emoji_type_people" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

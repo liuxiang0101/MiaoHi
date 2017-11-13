@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+    <!--消息_标题栏-->
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/tv_message" />
+
+    <!--消息_@我的-->
+    <RelativeLayout
+        android:id="@+id/rl_message_at_mine"
+        style="@style/mineitem">
+
+        <TextView
+            style="@style/minetitle"
+            android:text="@string/title_msg_at_me" />
+
+        <ImageView
+            android:id="@+id/iv_atminerightarrow"
+            style="@style/minerightarrow" />
+
+        <TextView
+            android:id="@+id/tv_atme_bubblecount"
+            style="@style/msgbubblecount"
+            android:layout_toLeftOf="@+id/iv_atminerightarrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalLine"
+        android:layout_marginLeft="15dp" />
+    <!--消息_评论-->
+    <RelativeLayout
+        android:id="@+id/rl_message_comment"
+        style="@style/mineitem">
+
+        <TextView
+            style="@style/minetitle"
+            android:text="@string/tv_msg_switch_comment" />
+
+        <ImageView
+            android:id="@+id/iv_commentrightarrow"
+            style="@style/minerightarrow" />
+
+        <TextView
+            android:id="@+id/tv_comment_bubblecount"
+            style="@style/msgbubblecount"
+            android:layout_toLeftOf="@+id/iv_commentrightarrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalLine"
+        android:layout_marginLeft="15dp" />
+    <!--消息_通知-->
+    <RelativeLayout
+        android:id="@+id/rl_message_notice"
+        style="@style/mineitem">
+
+        <TextView
+            style="@style/minetitle"
+            android:text="@string/title_notify" />
+
+        <ImageView
+            android:id="@+id/iv_noticerightarrow"
+            style="@style/minerightarrow" />
+
+        <TextView
+            android:id="@+id/tv_notic_bubblecount"
+            style="@style/msgbubblecount"
+            android:layout_toLeftOf="@+id/iv_noticerightarrow" />
+
+    </RelativeLayout>
+
+    <View style="@style/HorizontalLine" />
+
+    <View
+        style="@style/HorizontalLine"
+        android:layout_marginTop="10dp" />
+    <!--消息_映答-->
+    <RelativeLayout
+        android:id="@+id/rl_message_qa"
+        style="@style/mineitem">
+
+        <TextView
+            style="@style/minetitle"
+            android:text="@string/tv_qa" />
+
+        <ImageView
+            android:id="@+id/iv_qarightarrow"
+            style="@style/minerightarrow" />
+
+        <TextView
+            android:id="@+id/tv_qa_bubblecount"
+            style="@style/msgbubblecount"
+            android:layout_toLeftOf="@+id/iv_qarightarrow" />
+    </RelativeLayout>
+
+    <View style="@style/HorizontalLine" />
+
+    <View
+        style="@style/HorizontalLine"
+        android:layout_marginTop="10dp" />
+    <!--消息_系统-->
+    <RelativeLayout
+        android:id="@+id/rl_message_system"
+        style="@style/mineitem">
+
+        <TextView
+            style="@style/minetitle"
+            android:text="@string/tv_miaohi_assistant" />
+
+        <ImageView
+            android:id="@+id/iv_systemrightarrow"
+            style="@style/minerightarrow" />
+
+        <TextView
+            android:id="@+id/tv_system_bubblecount"
+            style="@style/msgbubblecount"
+            android:layout_toLeftOf="@+id/iv_systemrightarrow" />
+    </RelativeLayout>
+
+    <View style="@style/HorizontalLine" />
+
+</LinearLayout>

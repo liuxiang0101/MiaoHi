@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="收到的礼物" />
+
+    <RelativeLayout
+        android:id="@+id/rl_vdreceivegift_count"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_vdreceivegift_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/font_color"
+            android:textSize="12dp"
+            tools:text="此视频收到个礼物" />
+
+        <View
+            style="@style/common_mini_line_df"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ptl_videodetailreceivegift"/>
+
+</LinearLayout>

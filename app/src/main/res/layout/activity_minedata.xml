@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--个人设置-->
+    <!--标题-->
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/cn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="保存"
+        app:titleText="@string/title_personal_setting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--设置头像-->
+            <LinearLayout
+                android:id="@+id/ll_mine_data_seticon"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/common_enter_selector"
+                android:gravity="center"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/MineData_Hint_Text"
+                    android:text="@string/tv_save_user_icon" />
+
+                <com.haiqiu.miaohi.view.MyCircleView
+                    android:id="@+id/iv_minedata_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/head_default" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/enterarrow" />
+
+            </LinearLayout>
+
+            <View style="@style/common_mini_line_df" />
+
+            <!--设置背景-->
+            <LinearLayout
+                android:id="@+id/ll_minedata_bg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/common_enter_selector"
+                android:gravity="center"
+                android:paddingRight="15dp">
+
+                <TextView
+                    style="@style/MineData_Hint_Text"
+                    android:text="更换个人主页背景" />
+
+                <ImageView
+                    android:id="@+id/iv_minedata_bg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@color/color_f1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/enterarrow" />
+
+            </LinearLayout>
+
+            <View style="@style/common_mini_line_df" />
+            <View style="@style/common_mini_line_df"
+                android:layout_marginTop="15dp"/>
+            <!--昵称-->
+            <LinearLayout style="@style/LinearLayout_Tab_Style">
+
+                <TextView
+                    style="@style/MineData_Text"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/tv_nickname" />
+
+                <EditText
+                    android:id="@+id/et_minedata_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:maxLength="21"
+                    android:paddingRight="25dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_1d"
+                    android:textColorHint="@color/gray_text_1"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/svg_rightarrow" />-->
+
+            </LinearLayout>
+
+            <View style="@style/common_mini_line_df" />
+            <!--性别-->
+            <LinearLayout style="@style/LinearLayout_Tab_Style">
+
+                <TextView
+                    style="@style/MineData_Text"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/tv_sex" />
+
+                <EditText
+                    android:id="@+id/et_minedata_sex"
+                    style="@style/MineData_Hint_Text"
+                    android:focusable="false"
+                    android:gravity="right" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_minedata_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/gender_man" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/enterarrow" />
+
+            </LinearLayout>
+
+            <View style="@style/common_mini_line_df" />
+            <!--地区-->
+            <LinearLayout style="@style/LinearLayout_Tab_Style">
+
+                <TextView
+                    style="@style/MineData_Text"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/tv_area" />
+
+                <TextView
+                    android:id="@+id/tv_minedata_local"
+                    style="@style/MineData_Hint_Text"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/enterarrow" />
+
+            </LinearLayout>
+
+            <View style="@style/common_mini_line_df" />
+            <!--生日-->
+            <LinearLayout style="@style/LinearLayout_Tab_Style">
+
+                <TextView
+                    style="@style/MineData_Text"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/tv_birthday" />
+
+                <EditText
+                    android:id="@+id/et_minedata_brithday"
+                    style="@style/MineData_Hint_Text"
+                    android:focusable="false"
+                    android:gravity="right" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/enterarrow" />
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <include layout="@layout/common_qa_bottom" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

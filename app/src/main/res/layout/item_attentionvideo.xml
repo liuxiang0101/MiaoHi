@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_topdivider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/common_bg" />
+
+    <View style="@style/common_mini_line_df" />
+    <!--作者相关信息部分-->
+    <LinearLayout
+        android:id="@+id/ll_attentionvideo_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_circle_gray_bg">
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:id="@+id/iv_attentionvideo_user_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/iv_attentionvideo_isvip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_attentionvideo_user_head"
+                android:layout_alignRight="@+id/iv_attentionvideo_user_head"
+                android:src="@drawable/svg_vip_little" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_attentionvideo_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_666"
+                android:textSize="16dp"
+                tools:text="NIKE SHOW" />
+
+            <TextView
+                android:id="@+id/tv_attentionvideo_upload_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/gray_text_1"
+                android:textSize="12dp"
+                tools:text="03.30" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--视频介绍部分-->
+    <TextView
+        android:id="@+id/tv_attentionvideo_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/color_666"
+        android:textSize="15dp"
+        tools:text="前中国国脚孙继海入选英国足撒地方撒地方是东方闪电球名人堂后，《太阳报》称这是‘错误’，因为孙继海'没有名气',质疑他为何能比肩亨利、坎通纳和博格坎普等传奇。" />
+
+    <TextView
+        android:id="@+id/tv_attentionvideo_invite_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="@color/font_color"
+        android:textSize="15dp"
+        tools:text="参加 #专题名称# 专题" />
+
+
+    <com.haiqiu.miaohi.widget.mediaplayer.VideoViewWrap
+        android:id="@+id/video_attentionvideo_view_wrap"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/tv_attentionvideo_upload_time_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:textColor="@color/gray_text_1"
+        android:textSize="12dp"
+        android:visibility="gone"
+        tools:text="03.30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_attentionvideo_prise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/iv_attentionvideo_prise_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_prise" />
+
+            <TextView
+                android:id="@+id/tv_attentionvideo_prise_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray_text_1"
+                android:textSize="15dp"
+                tools:text="34343" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_attentionvideo_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/svg_icon_comment" />
+
+            <TextView
+                android:id="@+id/tv_attentionvideo_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray_text_1"
+                android:textSize="15dp"
+                tools:text="34343" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_attentionvideo_gift"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/svg_icon_gift" />
+
+            <TextView
+                android:id="@+id/tv_attentionvideo_gift_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray_text_1"
+                android:textSize="15dp"
+                tools:text="34343" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_attentionvideo_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/svg_icon_share" />
+
+            <TextView
+                android:id="@+id/tv_attentionvideo_share_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="分享"
+                android:textColor="@color/gray_text_1"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/common_mini_line_df" />
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_play_control_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/ProgressBarBig_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/selector_play_control" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_control"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_bottom_control_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_50"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/common_white" />
+
+        <RelativeLayout
+            android:id="@+id/rl_seek_bar_wrap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxHeight="2dp"
+                android:minHeight="2dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:progressDrawable="@drawable/seekbar_layer_list"
+                android:thumb="@drawable/shape_seekbar_thumb_corner_stroke_circle"
+                android:thumbOffset="0dp"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_duration_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/common_white" />
+
+        <ImageView
+            android:id="@+id/iv_transfer_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="35dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/icon_fullscreen" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close_audio"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/selector_close_audio" />
+
+</RelativeLayout>

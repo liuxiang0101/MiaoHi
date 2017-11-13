@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_filter_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#cc000000">
+
+        <ImageView
+            android:id="@+id/iv_filter_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/iv_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_80"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_xuanze"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/paishexuanze" />
+
+        <TextView
+            android:id="@+id/tv_filter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent_80"
+            android:gravity="center"
+            android:minHeight="25dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            tools:text="原画" />
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_50"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_download_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:visibility="gone"
+            tools:text="56%" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

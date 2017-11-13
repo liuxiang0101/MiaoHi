@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70.5dp"
+    android:background="@drawable/linearlayout_mine_tab_selector"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="11dp">
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape_circle_gray_bg">
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:id="@+id/iv_user_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/iv_isvip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_user_head"
+                android:layout_alignRight="@+id/iv_user_head"
+                android:src="@drawable/vip_little"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/color_1d"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    tools:text="孙继海" />
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/gender_women"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_answer_auth"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/qa_black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_user_authentic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_999"
+                android:textSize="10dp"
+                tools:text="点发货速度快粉红色的覅U盾个" />
+        </LinearLayout>
+
+        <!--套一层防止点错-->
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="11dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_add_attention"
+                style="@style/attention_style"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress_attention"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:button="@drawable/selector_chock_box"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/common_mini_line_df"
+        android:layout_marginLeft="38dp" />
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.haiqiu.miaohi.utils.shareImg.ShareQAHomeImageView
+        android:id="@+id/sqi_qahome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/cn_qahome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshListView
+        android:id="@+id/ptrl_qahome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_otherqahomebottom"
+        android:layout_below="@+id/cn_qahome" />
+
+    <RelativeLayout
+        android:id="@+id/rl_otherqahomebottom"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/sqi_qahome"
+        android:layout_toEndOf="@+id/sqi_qahome">
+
+        <TextView
+            android:id="@+id/tv_ohterqapaycount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            tools:text="50.00"
+            android:textStyle="bold"
+            android:layout_below="@+id/tv_needpay"
+            android:layout_alignLeft="@+id/tv_needpay"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/color_1d"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_qahomemoneyunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_1d"
+            android:textSize="12dp"
+            android:layout_toRightOf="@+id/tv_ohterqapaycount"
+            android:layout_alignBottom="@+id/tv_ohterqapaycount"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:text="嗨币"/>
+
+        <TextView
+            android:id="@+id/tv_qahomequestionbtn"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_otherqapaybtn"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:text="向她提问"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_needpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#ff4545"
+            android:layout_marginLeft="30dp"
+            android:text="需支付"
+            android:layout_alignTop="@+id/tv_qahomequestionbtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_homeqalimitfree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="限时免费"
+            android:textColor="#ff4545"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginLeft="30dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_otherqahomebottom"
+        android:src="@drawable/shadow"/>
+
+</RelativeLayout>

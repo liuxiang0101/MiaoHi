@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        <!--充值金额-->
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@color/color_666"
+            android:textSize="15dp"
+            tools:text="6嗨币" />
+        <!--优惠金额-->
+        <TextView
+            android:id="@+id/tv_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_value"
+            android:background="@drawable/selector_favourable"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            tools:text="送6"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+        <!--选中按钮-->
+        <TextView
+            android:id="@+id/tv_recharge_amount"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_recharge_button_normal"
+            android:gravity="center"
+            android:textColor="@color/red_text"
+            android:textSize="16dp"
+            tools:text="￥6" />
+    </RelativeLayout>
+</LinearLayout>

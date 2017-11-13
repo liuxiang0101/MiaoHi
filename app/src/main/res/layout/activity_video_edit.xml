@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_1d"
+    android:orientation="vertical"
+    tools:context="com.haiqiu.miaohi.activity.VideoEditActivity">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightText="继续"
+        app:titleText="视频编辑" />
+
+    <FrameLayout
+        android:id="@+id/fl_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black">
+
+        <com.haiqiu.miaohi.widget.mediaplayer.GLVideoView
+            android:id="@+id/gl_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_video_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/video_progress_bar"
+            style="@style/ProgressBarBig_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <com.haiqiu.miaohi.widget.decal.DecalView
+            android:id="@+id/decal_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:delete_image="@drawable/paishetiezhiguanbi"
+            app:delete_image_height="22.5dp"
+            app:delete_image_width="22.5dp"
+            app:image_height="120dp"
+            app:image_width="120dp"
+            app:push_image="@drawable/paishetiezhitiaozheng"
+            app:push_image_height="22.5dp"
+            app:push_image_width="22.5dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_tip_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="14dp"
+        android:text="分镜"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_audio_control"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_close_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="11dp"
+                android:paddingRight="9dp"
+                android:src="@drawable/selector_close_audio" />
+
+            <com.haiqiu.miaohi.widget.BZSeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="0dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                app:backgroundColor="@color/color_1d"
+                app:backgroundLineHeight="1dp"
+                app:progressBackgroundColor="@color/color_61"
+                app:progressColor="@color/white"
+                app:progressLineHeight="3dp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_storyboard"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:clipToPadding="false"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp">
+
+        <TextView
+            android:id="@+id/tv_tip_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="滤镜"
+            android:textColor="@color/white"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_tip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="(每个分镜可以添加不同滤镜)"
+            android:textColor="@color/color_666"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="15dp" />
+
+    <com.haiqiu.miaohi.widget.tablayout.CommonTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="17dp"
+        android:background="#262626"
+        app:tl_indicator_anim_enable="false"
+        tl:tl_iconVisible="true"
+        tl:tl_indicator_height="5dp"
+        tl:tl_indicator_style="ARC"
+        tl:tl_indicator_width="10dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/color_666"
+        tl:tl_textsize="12dp" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--意见反馈-->
+    <!--标题-->
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/cn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/tv_idea_feedback" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/cn">
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/et_hint_feedback_content"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minHeight="240dp"
+            android:minLines="8"
+            android:padding="15dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/feedback_et_bg"
+            android:textColorHint="@color/color_999"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_word_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:text="300"
+            android:textColor="@color/feedback_et_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_feedback_mial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="@string/et_hint_feedback_contact_information"
+            android:padding="15dp"
+            android:textColor="@color/feedback_et_bg"
+            android:textColorHint="@color/color_999"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_setting_feedback_commit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_df"
+        android:text="@string/bt_commit"
+        android:textColor="@color/camera_progress_split"
+        android:textSize="15dp" />
+
+</RelativeLayout>

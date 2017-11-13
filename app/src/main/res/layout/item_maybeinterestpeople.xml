@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_enter_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:id="@+id/mcv_maybeinterest"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/head_default" />
+
+            <ImageView
+                android:id="@+id/iv_vip_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mcv_maybeinterest"
+                android:layout_alignRight="@+id/mcv_maybeinterest"
+                android:src="@drawable/vip_little"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/mcv_maybeinterest"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_maybeinterest_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginRight="36dp"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        tools:text="用户名" />
+
+                    <ImageView
+                        android:id="@+id/iv_gender"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="-32dp"
+                        android:src="@drawable/gender_man" />
+
+                    <ImageView
+                        android:id="@+id/iv_qa"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:src="@drawable/qa_black"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_maybeinterest_user_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="用户头衔"
+                    android:textColor="@color/color_999"
+                    android:textSize="10dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_maybeinterest_nolike"
+            android:layout_width="64dp"
+            android:layout_height="25dp"
+            android:background="@drawable/tag_bg"
+            android:gravity="center"
+            android:text="不喜欢"
+            android:textColor="@color/color_c4"
+            android:textSize="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_maybeinterest_attention"
+                android:layout_width="64dp"
+                android:layout_height="25dp"
+                android:background="@drawable/shape_attention_blue_selector"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/fontblue"
+                android:textSize="10dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress_attention"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_maybeinterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_maybeinterest_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/color_f1" />
+
+            <ImageView
+                android:id="@+id/iv_maybeinterest_leftvideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_maybeinterest_left"
+                android:layout_margin="5dp"
+                android:src="@drawable/isvideo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_maybeinterest_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/color_f1" />
+
+            <ImageView
+                android:id="@+id/iv_maybeinterest_middlevideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_maybeinterest_middle"
+                android:layout_margin="5dp"
+                android:src="@drawable/isvideo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_maybeinterest_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@color/color_f1" />
+
+            <ImageView
+                android:id="@+id/iv_maybeinterest_rightvideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_maybeinterest_right"
+                android:layout_margin="5dp"
+                android:src="@drawable/isvideo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/common_mini_line_style" />
+</LinearLayout>

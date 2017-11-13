@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_videodetail_totalcomment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_enter_selector"
+        android:gravity="center"
+        android:text="@string/tv_total_comment"
+        android:textColor="@color/color_666" />
+
+    <View style="@style/HorizontalLine" />
+
+    <TextView
+        android:id="@+id/tv_videodetail_vipcomment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_enter_selector"
+        android:gravity="center"
+        android:text="@string/tv_vip_comment"
+        android:textColor="@color/color_666" />
+
+    <View style="@style/HorizontalLine" />
+
+    <TextView
+        android:id="@+id/tv_videodetail_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/common_enter_selector"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/color_666" />
+</LinearLayout>

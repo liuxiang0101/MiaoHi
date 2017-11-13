@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_1b">
+
+        <com.haiqiu.miaohi.widget.tablayout.CommonTabLayout
+            android:id="@+id/ctl_myqa"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/found_tab_height"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@color/color_1b"
+            tl:tl_iconVisible="false"
+            tl:tl_indicator_color="@color/white"
+            tl:tl_indicator_height="3dp"
+            tl:tl_indicator_width="60dp"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/color_666"
+            tl:tl_textsize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_myqaback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_myqacontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_enter_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_itempraise_header"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@color/color_f1" />
+
+        <View
+            style="@style/HorizontalLine"
+            android:layout_alignParentBottom="true" />
+
+        <View
+            style="@style/HorizontalLine"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/tv_item_praise1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/tv_you_give_fabulous"
+            android:textColor="@color/color_666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_itempraise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_item_praise1"
+            android:text=""
+            android:textColor="@color/common_blue2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_item_praise2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_itempraise_name"
+            android:text="@string/tv_video_of"
+            android:textColor="@color/color_666"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_itempraise_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/font_color"
+            android:textSize="10dp"
+            tools:text="刚刚" />
+    </RelativeLayout>
+
+</LinearLayout>

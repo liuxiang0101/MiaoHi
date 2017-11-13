@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_enter_selector"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <com.haiqiu.miaohi.view.MyCircleView
+            android:id="@+id/iv_message_comment_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_circle_gray_bg" />
+
+        <ImageView
+            android:id="@+id/iv_isvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_message_comment_head"
+            android:layout_alignRight="@+id/iv_message_comment_head"
+            android:src="@drawable/vip_little"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/tv_message_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/iv_message_comment_head"
+            android:enabled="true"
+            android:singleLine="true"
+            android:textColor="@color/color_1d"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:text="姓名" />
+
+        <TextView
+            android:id="@+id/tv_message_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_message_comment_name"
+            android:layout_below="@+id/tv_message_comment_name"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_c4"
+            android:textSize="9dp"
+            tools:text="时间" />
+
+        <TextView
+            android:id="@+id/tv_message_comment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/tv_message_comment_name"
+            android:text="@string/tv_give_fabulous_to_your_video"
+            android:singleLine="true"
+            android:textColor="@color/color_c4"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_message_comment_video"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:scaleType="centerCrop"
+                android:src="@color/color_f1"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_video_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/isvideo"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_attention"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_attention_blue_selector"
+            android:gravity="center"
+            android:textColor="@color/fontblue"
+            android:textSize="12dp"
+            android:visibility="invisible"
+            tools:text="关注" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="55dp"
+        android:background="@color/color_df" />
+</LinearLayout>

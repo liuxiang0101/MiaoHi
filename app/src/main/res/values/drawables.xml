@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="album_bucket_normal" type="drawable">#ff22202d</item>
+    <item name="album_bucket_press" type="drawable">#ff33313d</item>
+    <item name="album_default_icon" type="drawable">#19ffffff</item>
+    <item name="album_title_bg" type="drawable">#00000000</item>
+    <item name="album_video_normal" type="drawable">#00000000</item>
+    <item name="album_video_press" type="drawable">#3f000000</item>
+    <item name="bg_host_user_normal" type="drawable">#ff17171b</item>
+    <item name="black" type="drawable">#ff000000</item>
+    <item name="color_1d" type="drawable">#1d1d1d</item>
+    <item name="caption_bg" type="drawable">#ff0e0e10</item>
+    <item name="dark_black_cor" type="drawable">#ff1f1e23</item>
+
+    <item name="drawable_232130" type="drawable">@drawable/subscribe_item_bg</item>
+    <item name="drawable_2b2938" type="drawable">#ff2b2938</item>
+    <item name="drawable_312f3e" type="drawable">#ff312f3e</item>
+    <item name="drawable_cc413f4c" type="drawable">#f6f7f9</item>
+    <item name="lucency" type="drawable">#00000000</item>
+    <item name="media_player_progressbar_progress" type="drawable">#ffff206f</item>
+    <item name="opt_press" type="drawable">#ff28272e</item>
+    <item name="pink" type="drawable">#fffa4d9f</item>
+    <item name="share_plat_bg_normal" type="drawable">#ff2b2938</item>
+    <item name="share_plat_bg_press" type="drawable">#ff3e3c4b</item>
+    <item name="translate" type="drawable">#00000000</item>
+    <item name="transparent" type="drawable">#00000000</item>
+    <item name="transparent_50" type="drawable">#b0000000</item>
+    <item name="video_play_black_cor" type="drawable">#ff222126</item>
+    <item name="white" type="drawable">#ffffffff</item>
+</resources>

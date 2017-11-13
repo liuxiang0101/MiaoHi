@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.haiqiu.miaohi.view.MyCircleView
+            android:id="@+id/mcv_head_attention"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:src="@drawable/head_default" />
+
+        <TextView
+            android:id="@+id/tv_head_attention_namecenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mcv_head_attention"
+            android:textColor="@color/fontblack_1b"
+            android:textSize="13dp"
+            android:singleLine="true"
+            tools:text="喜怒哀乐" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_item_head_attentionbtn"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_attentioned"
+        android:gravity="center"
+        android:text="已关注"
+        android:textSize="10dp"
+        android:textColor="@color/color_c4" />
+
+    <ImageView
+        android:id="@+id/tv_item_head_attentionshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/icon_default"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.haiqiu.miaohi.widget.tablayout.CommonTabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/found_tab_height"
+    tl:tl_iconVisible="false"
+    tl:tl_indicator_color="@color/common_blue2"
+    tl:tl_indicator_height="3dp"
+    tl:tl_indicator_width="61dp"
+    tl:tl_indicator_width_equal_title="true"
+    tl:tl_tab_space_equal="true"
+    tl:tl_textSelectColor="@color/common_blue2"
+    tl:tl_textUnselectColor="@color/gray_text_1"
+    tl:tl_textsize="17dp" />

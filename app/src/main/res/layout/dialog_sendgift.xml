@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/videodetail_sendgift_sun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rl_videodetail_dialog"
+        android:layout_marginTop="-90dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/videodetail_sendgift_sun"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginRight="-50dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_videodetail_dialog"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/ll_videodetail_sendgift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/videodetail_sendgift_top">
+
+            <TextView
+                android:id="@+id/tv_dialog_sendgifttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="世界杯"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_dialog_sendgiftcancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/selector_videodetail_sendgift_close" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_videodetail_sendgift"
+            android:background="@drawable/videodetail_sendgift_bottom">
+
+            <RelativeLayout
+                android:id="@+id/tv_dialog_sendgiftvpout"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:id="@+id/iv_dialog_sendgift"
+                    android:layout_width="126dp"
+                    android:layout_height="126dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@color/color_f1" />
+
+
+                <ImageView
+                    android:id="@+id/iv_dialog_sendgiftrighttarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="30dp"
+                    android:src="@drawable/gift_right_arrow" />
+
+
+                <ImageView
+                    android:id="@+id/iv_dialog_sendgiftleftarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="30dp"
+                    android:src="@drawable/gift_left_arrow" />
+
+                <View
+                    style="@style/HorizontalLine"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_dialog_sendgift"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/tv_dialog_sendgiftvpout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tv_dialog_sendgiftcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_dialog_sendgift"
+                android:layout_marginLeft="10dp"
+                android:text="此礼物还剩3个"
+                android:textColor="@color/common_blue2"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_dialog_sendgifterror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_dialog_sendgift"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:text="发送失败难道网络出问题了？"
+                android:textColor="@color/red_text"
+                android:layout_marginTop="5dp"
+                android:textSize="11dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_dialog_sendgift"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/tv_dialog_sendgifterror"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_videodetail_sendgift_send_btn"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_videodetail_sendgift_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/videodetail_sendgift_fail"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

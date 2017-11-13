@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="14dp">
+
+    <TextView
+        android:id="@+id/tv_question_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:textColor="@color/color_666"
+        android:textSize="14dp"
+        tools:text="风格和地方和规范士大夫士大夫士大夫的和规范化股份给是根深蒂固是反对" />
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_question_info"
+        android:layout_marginTop="14dp"
+        android:scaleType="centerCrop"
+        android:src="@color/color_f1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_video_state"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_question_info"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp" />
+
+        <ImageView
+            android:id="@+id/iv_video_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_question_info"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/svg_icon_private"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/iv_cover"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_cover"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+                <com.haiqiu.miaohi.view.MyCircleView
+                    android:id="@+id/iv_user_head"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <ImageView
+                    android:id="@+id/iv_vip_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/svg_vip_little"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_answer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/color_666"
+                android:textSize="16dp"
+                tools:text="孙继海" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_user_authentic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/gray_text_1"
+            android:textSize="12dp"
+            tools:text="健康和健康会dfgsdf冯小刚发不发给大夫感受到分公司的分割线都发给对方尽快交" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:id="@+id/tv_look_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_666"
+                android:textSize="12dp"
+                tools:text="围观: 4000" />
+
+            <TextView
+                android:id="@+id/tv_time_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/color_666"
+                android:textSize="12dp"
+                tools:text="2016.09.23  19:40" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

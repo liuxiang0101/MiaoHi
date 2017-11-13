@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haiqiu.miaohi.activity.VideoRecorderActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <org.wysaid.view.BZGLSurfaceView
+            android:id="@+id/bz_glSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/cover_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <View
+            android:id="@+id/cover_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/record_focusing"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/exposure_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_exposure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/baoguangtishi"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingRight="3dp"
+                android:paddingTop="5dp"
+                android:text="上下滑动可调节曝光"
+                android:textColor="@color/color_1d"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <com.haiqiu.miaohi.widget.VerticalSeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="196dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navigation_height"
+            android:background="#4d000000"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/paisheguanbi" />
+
+
+            <ImageView
+                android:id="@+id/iv_beautiful_face"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/selector_beautiful_face" />
+
+
+            <ImageView
+                android:id="@+id/iv_face_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="7dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/selector_camera_bg" />
+
+            <ImageView
+                android:id="@+id/iv_flash_light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_face_camera"
+                android:paddingLeft="15dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/selector_turn_flash_bg" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_ratio_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/ratio_container_margin_bottom">
+
+            <LinearLayout
+                android:id="@+id/ll_ratio_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/corners_ratio_bg_1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <com.haiqiu.miaohi.widget.RatioView
+                android:id="@+id/ratio_view"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/corners_ratio_bg"
+                app:ratio_x="1"
+                app:ratio_y="1" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@+id/ratio_view"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_bottom_control_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_1d"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_recorder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginTop="29dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="58dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_delete_image" />
+
+            <RelativeLayout
+                android:layout_width="83dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_record_animation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/paishedengdai" />
+
+                <Button
+                    android:id="@+id/bt_recorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="1dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_confirm_image" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shape_time_stroke"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            tools:text="69.4s" />
+
+        <com.haiqiu.miaohi.widget.tablayout.CommonTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:background="#262626"
+            app:tl_indicator_anim_enable="false"
+            tl:tl_iconVisible="true"
+            tl:tl_indicator_height="5dp"
+            tl:tl_indicator_style="ARC"
+            tl:tl_indicator_width="10dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_textSelectColor="@color/white"
+            tl:tl_textUnselectColor="@color/color_666"
+            tl:tl_textsize="12dp" />
+    </RelativeLayout>
+
+    <com.haiqiu.miaohi.widget.ProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_above="@+id/rl_bottom_control_layout"
+        android:layout_marginBottom="-8dp" />
+</RelativeLayout>

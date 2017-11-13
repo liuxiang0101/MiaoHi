@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_sharevideoandimg_top2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sharevideoandimg2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_shareimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_shareimgwrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp">
+
+                <ImageView
+                    android:id="@+id/iv_shareimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="25dp"
+                    android:src="@color/color_f1" />
+
+                <ImageView
+                    android:id="@+id/iv_sharevideoandimgplaybtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/icon_play"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignBottom="@+id/rl_shareimgwrap"
+                android:layout_centerHorizontal="true"
+                android:src="@color/white" />
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:id="@+id/cv_shareheader"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/rl_shareimgwrap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/head_default" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sharevideoandimg_bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sharename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:text="太子夜华" />
+
+        <ImageView
+            android:id="@+id/iv_sharevideoandimg_qrcode2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@color/color_f1" />
+
+        <TextView
+            android:id="@+id/tv_skiptip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/color_c4"
+            tools:text="长按识别二维码 查看更多精彩内容" />
+    </LinearLayout>
+
+</LinearLayout>

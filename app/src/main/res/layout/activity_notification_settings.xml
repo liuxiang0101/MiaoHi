@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.haiqiu.miaohi.view.CommonNavigation
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleText="@string/tv_show_message_info" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/tv_new_msg_notify"
+            android:textColor="@color/color_c4"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dfdfdf" />
+        <!--@我的消息_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_at_me"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="@string/title_msg_at_me"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_at_me"
+                android:layout_width="67dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/mine_line" />
+        <!--评论消息_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_comment"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="@string/tv_msg_switch_comment"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_comment"
+                android:layout_width="67dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/mine_line" />
+        <!--收到的赞_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_receive_zan"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="@string/title_msg_receivezan"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_receive_zan"
+                android:layout_width="67dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/mine_line" />
+        <!--新的粉丝_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_new_fans"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="@string/tv_msg_switch_new_fans"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_new_fans"
+                android:layout_width="67dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/mine_line" />
+        <!--新的粉丝_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_receive_gift"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="收到礼物"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_receive_gift"
+                android:layout_width="40dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dfdfdf" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/tv_new_qa_msg_notify"
+            android:textColor="@color/color_c4"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dfdfdf" />
+        <!--我问的_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_i_ask"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="@string/tv_msg_switch_i_ask"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_i_ask"
+                android:layout_width="67dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/mine_line" />
+        <!--新的粉丝_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_ask_me"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="@string/tv_msg_switch_ask_me"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_ask_me"
+                android:layout_width="67dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/mine_line" />
+        <!--围观的_开关-->
+        <LinearLayout
+            android:id="@+id/ll_switch_observer"
+            style="@style/LinearLayout_Tab_Style"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="@string/tv_msg_switch_observer"
+                android:textColor="@color/color_666" />
+
+            <ToggleButton
+                android:id="@+id/tb_switch_observer"
+                android:layout_width="67dp"
+                android:layout_height="31dp"
+                android:background="@android:color/transparent"
+                android:button="@drawable/ios7_btn"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center_vertical|right"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </LinearLayout>
+
+        <include layout="@layout/mine_line" />
+    </LinearLayout>
+</ScrollView>
+

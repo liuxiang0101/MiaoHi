@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_search_bar" />
+
+    <com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshListView
+        android:id="@+id/pull_to_refresh_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_conform"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/color_1b"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:visibility="gone" />
+</LinearLayout>

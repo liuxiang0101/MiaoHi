@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_search_bar" />
+
+    <View style="@style/common_mini_line_c3d5df" />
+
+    <com.haiqiu.miaohi.widget.tablayout.SlidingTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        tl:tl_indicator_color="@color/color_1d"
+        tl:tl_indicator_height="3dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/color_1d"
+        tl:tl_textUnselectColor="@color/color_c4"
+        tl:tl_textsize="14dp" />
+
+    <View style="@style/common_mini_line_df" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/person_header_height"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.haiqiu.miaohi.view.MyCircleView
+            android:id="@+id/mcv_commompersonalinfo_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:src="@drawable/head_default" />
+
+        <TextView
+            android:id="@+id/tv_commonpersonalinfo_nodescribename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mcv_commompersonalinfo_head"
+            android:singleLine="true"
+            android:textColor="@color/fontblack_1b"
+            android:textSize="13dp"
+            android:visibility="gone"
+            tools:text="喜怒哀乐" />
+
+        <ImageView
+            android:id="@+id/iv_nodescribe_gender"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tv_commonpersonalinfo_nodescribename"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_commonpersonalinfo_nodescribename"
+            android:src="@drawable/gender_women"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_nodescribe_qaauthotic"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tv_commonpersonalinfo_nodescribename"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_nodescribe_gender"
+            android:src="@drawable/itemqa"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_commonpersonalinfo_nodescribetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_commonpersonalinfo_nodescribename"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_commonpersonalinfo_nodescribename"
+            android:textColor="@color/color_999"
+            android:textSize="10dp"
+            android:visibility="gone"
+            tools:text="8分钟前回答了" />
+
+        <TextView
+            android:id="@+id/tv_commonpersonalinfo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mcv_commompersonalinfo_head"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/mcv_commompersonalinfo_head"
+            android:singleLine="true"
+            android:textColor="@color/fontblack_1b"
+            android:textSize="13dp"
+            tools:text="喜怒哀乐" />
+
+        <TextView
+            android:id="@+id/tv_commonpersonalinfo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_commonpersonalinfo_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_commonpersonalinfo_name"
+            android:textColor="@color/color_999"
+            android:textSize="10dp"
+            android:visibility="visible"
+            tools:text="8分钟前回答了" />
+
+        <TextView
+            android:id="@+id/tv_commonpersonalinfo_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mcv_commompersonalinfo_head"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/ll_commonqa_right"
+            android:layout_toRightOf="@+id/mcv_commompersonalinfo_head"
+            android:singleLine="true"
+            android:textColor="@color/color_999"
+            android:textSize="10dp"
+            tools:text="北京嗨球科技董事长及创始人" />
+
+        <ImageView
+            android:id="@+id/iv_commonpersonalinfo_gender"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tv_commonpersonalinfo_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_commonpersonalinfo_name"
+            android:src="@drawable/gender_women"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_commonpersonalinfo_qaauthotic"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBottom="@+id/tv_commonpersonalinfo_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_commonpersonalinfo_gender"
+            android:src="@drawable/itemqa"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_commonpersonalinfo_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mcv_commompersonalinfo_head"
+            android:layout_alignRight="@+id/mcv_commompersonalinfo_head"
+            android:src="@drawable/vip_little"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_commonqa_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_commonpersonalinfo_attention"
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_attentionselection"
+                android:gravity="center"
+                android:text="已关注"
+                android:textColor="@color/color_c4"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_deletevideoandimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/deletevideoandimg"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

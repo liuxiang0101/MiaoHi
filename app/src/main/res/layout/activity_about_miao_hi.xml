@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.AboutMiaoHiActivity">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/tv_about_miaohi" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_999"
+        tools:text="miaohi 1.6v" />
+
+    <View
+        style="@style/common_mini_line_df"
+        android:layout_marginTop="30dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/common_bg" />
+
+    <View style="@style/common_mini_line_df" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/linearlayout_mine_tab_selector"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:text="@string/text_miaohi_user_protocol"
+            android:textColor="@color/color_222" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/enterarrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/common_mini_line_df"
+        android:layout_marginLeft="9dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_manage_rule"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/linearlayout_mine_tab_selector"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:text="@string/text_miaohi_communityt_rule"
+            android:textColor="@color/color_222" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/enterarrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/common_mini_line_df"
+        android:layout_marginLeft="9dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ask_and_question"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/linearlayout_mine_tab_selector"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:text="@string/text_ask_and_question"
+            android:textColor="@color/color_222" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/enterarrow" />
+    </RelativeLayout>
+
+    <View
+        style="@style/common_mini_line_df"
+        android:layout_marginLeft="9dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_check_update"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/linearlayout_mine_tab_selector"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:text="@string/tv_check_version_update"
+            android:textColor="@color/color_222" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/enterarrow" />
+    </RelativeLayout>
+
+    <View style="@style/common_mini_line_df" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg" />
+</LinearLayout>

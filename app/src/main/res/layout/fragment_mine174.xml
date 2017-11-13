@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <com.haiqiu.miaohi.view.CommonNavigation
+        android:id="@+id/cn_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleText="@string/title_mine" />
+
+    <ScrollView
+        android:id="@+id/sv_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_editpersonaldata"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white">
+
+                <com.haiqiu.miaohi.view.MyCircleView
+                    android:id="@+id/mcv_mineheader"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/head_default" />
+
+                <ImageView
+                    android:id="@+id/iv_minevip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mcv_mineheader"
+                    android:layout_alignRight="@+id/mcv_mineheader"
+                    android:src="@drawable/svg_vip_big"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_minename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/mcv_mineheader"
+                    android:ellipsize="end"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_666"
+                    android:textSize="16dp"
+                    tools:text="用户名" />
+
+                <ImageView
+                    android:id="@+id/iv_minesex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/tv_minename"
+                    android:src="@drawable/svg_gender_man"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_minedescribe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mcv_mineheader"
+                    android:layout_toRightOf="@+id/mcv_mineheader"
+                    android:singleLine="true"
+                    android:textColor="@color/font_color"
+                    android:textSize="10dp"
+                    tools:text="用户头衔" />
+
+                <ImageView
+                    android:id="@+id/iv_mineqaicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/iv_minesex"
+                    android:src="@drawable/svg_label_question_answer"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_minearrow"
+                    style="@style/minerightarrow" />
+
+            </RelativeLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_mine_persondescribelong"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:textColor="@color/font_color"-->
+            <!--android:textSize="12dp"-->
+            <!--android:visibility="gone"-->
+            <!--tools:text="前国脚、中国著名足球运动员" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_mine_persondescribeshort"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/white"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingRight="15dp"-->
+            <!--android:textColor="@color/color_666"-->
+            <!--android:textSize="14dp"-->
+            <!--android:visibility="gone"-->
+            <!--tools:text="前国脚、中国著名足球运动员" />-->
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_minevideo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_enter_selector">
+
+                    <TextView
+                        android:id="@+id/tv_minevideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="0"
+                        android:textColor="@color/color_666"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/tv_video"
+                        android:textColor="@color/font_color"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mine_expression"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_enter_selector">
+
+                    <TextView
+                        android:id="@+id/tv_mineexpression"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="0"
+                        android:textColor="@color/color_666"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/tv_give_fabulous"
+                        android:textColor="@color/font_color"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_minereceivegift"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_enter_selector">
+
+                    <TextView
+                        android:id="@+id/tv_minereceivegift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:text="0"
+                        android:textColor="@color/color_666"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="12dp"
+                        android:text="@string/tv_receive_gift"
+                        android:textColor="@color/font_color"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_minereceivegift_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/tv_minereceivegift"
+                        android:layout_marginLeft="-2dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_toRightOf="@+id/tv_minereceivegift"
+                        android:background="@drawable/promptbubble_little_shape"
+                        android:gravity="center"
+                        android:minHeight="12dp"
+                        android:minWidth="12dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="9dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <View style="@style/HorizontalLine" />
+                <!--开通映答-->
+                <RelativeLayout
+                    android:id="@+id/rl_open_qa"
+                    style="@style/mineitem"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_open_qa"
+                        style="@style/mineicon"
+                        android:src="@drawable/svg_answer_and_ask_press" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/iv_open_qa"
+                        android:text="@string/tv_open_qa"
+                        android:textColor="@color/common_blue2"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/svg_to_right_arrow_small_blue" />
+
+                    <View
+                        style="@style/HorizontalLine"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+
+                <View style="@style/HorizontalLine" />
+                <!--粉丝-->
+                <RelativeLayout
+                    android:id="@+id/rl_mine_fans"
+                    style="@style/mineitem">
+
+                    <ImageView
+                        android:id="@+id/iv_minefans"
+                        style="@style/mineicon"
+                        android:src="@drawable/svg_mine_fans" />
+
+                    <TextView
+                        style="@style/minetitle"
+                        android:layout_toRightOf="@+id/iv_minefans"
+                        android:text="@string/tv_fan" />
+
+                    <ImageView
+                        android:id="@+id/iv_fansrightarrow"
+                        style="@style/minerightarrow" />
+
+                    <TextView
+                        android:id="@+id/tv_fans_bubblecount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/iv_fansrightarrow"
+                        android:layout_toStartOf="@+id/iv_fansrightarrow"
+                        android:background="@drawable/promptbubble_big_shape"
+                        android:gravity="center"
+                        android:minHeight="18dp"
+                        android:minWidth="18dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/HorizontalLine"
+                    android:layout_marginLeft="10dp" />
+                <!--关注-->
+                <RelativeLayout
+                    android:id="@+id/rl_mine_attention"
+                    style="@style/mineitem">
+
+                    <ImageView
+                        android:id="@+id/iv_attention"
+                        style="@style/mineicon"
+                        android:src="@drawable/svg_mine_attention" />
+
+                    <TextView
+                        style="@style/minetitle"
+                        android:layout_toRightOf="@+id/iv_attention"
+                        android:text="@string/tv_attention" />
+
+                    <ImageView style="@style/minerightarrow" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/HorizontalLine"
+                    android:layout_marginLeft="10dp" />
+                <!--找好友-->
+                <RelativeLayout
+                    android:id="@+id/rl_mine_findfriend"
+                    style="@style/mineitem">
+
+                    <ImageView
+                        android:id="@+id/iv_findfriend"
+                        style="@style/mineicon"
+                        android:src="@drawable/svg_mine_findfriend" />
+
+                    <TextView
+                        style="@style/minetitle"
+                        android:layout_toRightOf="@+id/iv_findfriend"
+                        android:text="@string/tv_find_good_friends" />
+
+                    <ImageView style="@style/minerightarrow" />
+
+                </RelativeLayout>
+
+                <View style="@style/HorizontalLine" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <View style="@style/HorizontalLine" />
+                <!--映答-->
+                <RelativeLayout
+                    android:id="@+id/rl_mine_qa"
+                    style="@style/mineitem">
+
+                    <ImageView
+                        android:id="@+id/iv_mineqa"
+                        style="@style/mineicon"
+                        android:src="@drawable/svg_mine_qa" />
+
+                    <TextView
+                        style="@style/minetitle"
+                        android:layout_toRightOf="@+id/iv_mineqa"
+                        android:text="@string/tv_qa" />
+
+                    <ImageView
+                        android:id="@+id/iv_qarightarrow"
+                        style="@style/minerightarrow" />
+
+                    <TextView
+                        android:id="@+id/tv_qacount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/iv_qarightarrow"
+                        android:layout_toStartOf="@+id/iv_qarightarrow"
+                        android:background="@drawable/promptbubble_big_shape"
+                        android:gravity="center"
+                        android:minHeight="18dp"
+                        android:minWidth="18dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/HorizontalLine"
+                    android:layout_marginLeft="10dp" />
+                <!--消息-->
+                <RelativeLayout
+                    android:id="@+id/rl_mine_message"
+                    style="@style/mineitem">
+
+                    <ImageView
+                        android:id="@+id/iv_minemessage"
+                        style="@style/mineicon"
+                        android:src="@drawable/svg_mine_message" />
+
+                    <TextView
+                        style="@style/minetitle"
+                        android:layout_toRightOf="@+id/iv_minemessage"
+                        android:text="@string/tv_message" />
+
+                    <ImageView
+                        android:id="@+id/iv_messagerightarrow"
+                        style="@style/minerightarrow" />
+
+                    <TextView
+                        android:id="@+id/tv_messagecount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/iv_messagerightarrow"
+                        android:layout_toStartOf="@+id/iv_messagerightarrow"
+                        android:background="@drawable/promptbubble_big_shape"
+                        android:gravity="center"
+                        android:minHeight="18dp"
+                        android:minWidth="18dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/HorizontalLine"
+                    android:layout_marginLeft="10dp" />
+                <!--草稿箱-->
+                <RelativeLayout
+                    android:id="@+id/rl_mine_draftbox"
+                    style="@style/mineitem">
+
+                    <ImageView
+                        android:id="@+id/iv_draftbox"
+                        style="@style/mineicon"
+                        android:src="@drawable/svg_mine_draftbox" />
+
+                    <TextView
+                        style="@style/minetitle"
+                        android:layout_toRightOf="@+id/iv_draftbox"
+                        android:text="@string/tv_drafts" />
+
+                    <ImageView
+                        android:id="@+id/iv_minedraftbox_arrow"
+                        style="@style/minerightarrow" />
+
+                    <TextView
+                        android:id="@+id/tv_draftcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@+id/iv_minedraftbox_arrow"
+                        android:text=""
+                        android:textColor="@color/color_999" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <View
+                style="@style/HorizontalLine"
+                android:layout_marginTop="10dp" />
+            <!--钱包-->
+            <RelativeLayout
+                android:id="@+id/rl_wallet"
+                style="@style/mineitem">
+
+                <ImageView
+                    android:id="@+id/iv_wallet"
+                    style="@style/mineicon"
+                    android:src="@drawable/svg_wallet_icon" />
+
+                <TextView
+                    style="@style/minetitle"
+                    android:layout_toRightOf="@+id/iv_wallet"
+                    android:text="@string/tv_wallet" />
+
+                <ImageView style="@style/minerightarrow" />
+
+            </RelativeLayout>
+
+            <View style="@style/HorizontalLine" />
+
+            <View
+                style="@style/HorizontalLine"
+                android:layout_marginTop="10dp" />
+            <!--设置-->
+            <RelativeLayout
+                android:id="@+id/rl_minesetting"
+                style="@style/mineitem">
+
+                <ImageView
+                    android:id="@+id/iv_minesetting"
+                    style="@style/mineicon"
+                    android:src="@drawable/svg_mine_setting" />
+
+                <TextView
+                    style="@style/minetitle"
+                    android:layout_toRightOf="@+id/iv_minesetting"
+                    android:text="@string/tv_setting" />
+
+                <ImageView style="@style/minerightarrow" />
+
+            </RelativeLayout>
+
+            <View style="@style/HorizontalLine" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

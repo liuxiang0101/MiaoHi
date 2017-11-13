@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_sharevideoandimg_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_sharevideoandimg_top"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_sharevideoandimg_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="明明garysong" />
+
+                <TextView
+                    android:id="@+id/tv_sharevideoandimg_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#979797"
+                    tools:text="于2016/12/08" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sharecontentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_sharecontent"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@color/color_f1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sharevideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/shareplay" />
+
+                    <TextView
+                        android:id="@+id/tv_videoandimgtype_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="长按二维码可播放"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sharevideoandimg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sharevideoandimg_describe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"
+            tools:text="最近2013-11-29（Nov 29, 2013）更新的Android ZXing 2.3.0 release源码及编译后的core-2.3.0.jar和android-integration-2.3.0.jar打包亲测可用，如大家有兴趣自己编译的话请参考下面的教程。 下面我写的教程修改自..." />
+
+        <ImageView
+            android:id="@+id/iv_sharevideoandimg_qrcode"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:src="@color/color_f1" />
+
+        <TextView
+            android:id="@+id/tv_videoandimg_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="长按二维码查看更多"
+            android:textColor="@color/color_1d"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="17dp"
+            android:drawableLeft="@drawable/sharebottomicon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/share_bottomstr"
+            android:textColor="@color/color_1d"
+            android:textSize="9dp" />
+
+    </LinearLayout>
+</LinearLayout>

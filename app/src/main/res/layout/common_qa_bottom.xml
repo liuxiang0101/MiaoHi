@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_common_qa_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <View
+        style="@style/common_mini_line_d6"
+        android:layout_marginTop="15dp" />
+    <!--头衔-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tv_your_title"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_necessary_mark1"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_title"
+            android:layout_toRightOf="@+id/tv_title"
+            android:gravity="top|center_horizontal"
+            android:text="*"
+            android:textColor="@color/common_blue2"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_title"
+            android:layout_toRightOf="@+id/tv_necessary_mark1"
+            android:text="@string/hint_do_not_posing"
+            android:textColor="@color/color_999"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:hint="@string/hint_title_option"
+            android:maxLength="20"
+            android:textColor="@color/color_1d"
+            android:textColorHint="@color/color_ccc"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View style="@style/common_mini_line_d6" />
+    <!--擅长回答的问题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_good_at_aspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/tv_you_are_good_at"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_necessary_mark2"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_good_at_aspect"
+            android:layout_toRightOf="@+id/tv_good_at_aspect"
+            android:gravity="top|center_horizontal"
+            android:text="*"
+            android:textColor="@color/common_blue2"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_good_at_aspect"
+            android:layout_toRightOf="@+id/tv_necessary_mark2"
+            android:text="(100字以内哦)"
+            android:textColor="@color/color_999"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/et_be_good_at"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_good_at_aspect"
+            android:layout_marginTop="15dp"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/hint_be_goot_at_describe"
+            android:maxLength="100"
+            android:textColor="@color/color_1d"
+            android:textColorHint="@color/color_ccc"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View style="@style/common_mini_line_d6" />
+
+    <View
+        style="@style/common_mini_line_d6"
+        android:layout_marginTop="15dp" />
+
+    <!--被提问的价格-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_ask_me_need_to_pay"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/et_ask_price"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:hint="0-2000"
+            android:maxLength="7"
+            android:textColor="@color/gray_text_1"
+            android:textColorHint="@color/color_ccc"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hai_currency"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_necessary_mark3"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="*"
+            android:textColor="@color/common_blue2"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View style="@style/common_mini_line_d6" />
+
+    <TextView
+        android:id="@+id/tv_bottom_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/tv_title"
+        android:layout_toRightOf="@+id/tv_necessary_mark1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/tv_change_qa_price_rule"
+        android:textColor="@color/color_c4"
+        android:textSize="12dp" />
+</LinearLayout>

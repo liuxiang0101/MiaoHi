@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/search_bar_found_fragment" />
+
+    <!--<com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshGridView-->
+    <!--android:id="@+id/pull_gv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/top" />-->
+    <com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshRecyclerHeaderView
+        android:id="@+id/pull_rv_header_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:background="@color/white"
+        android:tag="pull_rv_header_tag" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/pull_rv_header_id"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_sort_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="精选内容"
+            android:textColor="@color/color_1d"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_select_sort1"
+            android:layout_width="75dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/tag_bg"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/discover_sort" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择分类"
+                android:textColor="@color/color_1d"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

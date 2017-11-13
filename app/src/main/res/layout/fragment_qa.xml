@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_nodredgeqa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:visibility="invisible"
+                android:src="@drawable/head_default"/>
+
+            <TextView
+                android:id="@+id/tv_qaemptytip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="听说开通映答的人都赚疯了"
+                android:textColor="@color/color_1d"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_dredgeqa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_shape_dredgeqa"
+                android:gravity="center"
+                android:text="开通映答"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.haiqiu.miaohi.widget.pulltorefreshview.PullToRefreshRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="ptrrv_qa" />
+</LinearLayout>

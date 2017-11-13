@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_sharepersonalhome_outside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sharepersonalhome_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_sharepersonalhome_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="82dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="164dp"
+                android:layout_height="164dp"
+                android:src="@drawable/shareempty" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_rl_sharepersonalhome_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.haiqiu.miaohi.view.MyCircleView
+                android:id="@+id/mcv_sharepersonalhome_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/head_default" />
+
+            <ImageView
+                android:id="@+id/iv_sharepersonalhome_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mcv_sharepersonalhome_head"
+                android:layout_alignRight="@+id/mcv_sharepersonalhome_head"
+                android:src="@drawable/vip_big" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_sharepersonalhome_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/gender_women"
+            android:gravity="center"
+            android:text="TimSara"
+            android:textColor="@color/color_1d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_sharepersonalhome_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="中国化学第一人,江湖人称小雪人"
+            android:textColor="@color/color_999"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_sharepersonalhome_jointime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="于2016/06/27加入秒嗨"
+            android:textColor="@color/color_999"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_sharepersonalhome_qrcode"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@color/color_f1" />
+
+        <TextView
+            android:id="@+id/tv_qatip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="长按二维码查看更多"
+            android:textColor="@color/color_1d"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="17dp"
+            android:drawableLeft="@drawable/sharebottomicon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/share_bottomstr"
+            android:textColor="@color/color_1d"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+
+</FrameLayout>

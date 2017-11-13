@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_share"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+        android:overScrollMode="never" />
+
+    <View
+        android:id="@+id/v_deletetopline"
+        style="@style/common_mini_line_df"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_sharedeletevideo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@drawable/selector_shared_cancle"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/v_cancletopline"
+        style="@style/common_mini_line_df"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_sharecancle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@drawable/selector_shared_cancle"
+        android:visibility="visible" />
+
+</LinearLayout>
